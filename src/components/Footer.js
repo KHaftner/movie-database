@@ -1,11 +1,10 @@
-import React from 'react'
-
 function Footer() {
   return (
-    <div>
-        <h1>Footer!</h1>
-    </div>
+      <footer>
+        {/* change message? */}
+          <p>&copy; 2023 FWD 33</p>
+      </footer>
   )
 }
 
-export default Footer
+export default Footer;
