@@ -1,0 +1,20 @@
+.site-header {
+    display: flex;
+    align-items: center;
+    background-color: var(--plum);
+    color: var(--white);
+    box-shadow: 0 0.25rem 0.125rem -0.125rem #808080c9;
+}
+
+.site-header img {
+    display: block;
+    padding: 1rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.site-header h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    text-shadow: .25rem .25rem 0rem var(--black);
+}

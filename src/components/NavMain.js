@@ -1,10 +1,11 @@
+import "../styles/NavMain.css";
+
 import { NavLink } from 'react-router-dom';
 
 function NavMain() {
 	return (
 		<nav>
-      {/* commented out UL below is from class 9 example */}
-			{/* <ul>
+			<ul>
         <li>
           <NavLink to="/">Home</NavLink>
         </li>
@@ -12,9 +13,9 @@ function NavMain() {
           <NavLink to="/about">About</NavLink>
         </li>
         <li>
-          <NavLink to="/favs">Favs</NavLink>
+          <NavLink to="/favs">Favourites</NavLink>
         </li>
-      </ul> */}
+      </ul> 
 		</nav>
 	);
 }
