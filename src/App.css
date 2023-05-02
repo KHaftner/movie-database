@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+:root {
+    --plum: #350023;
+    --plum-lighter: #4f1a3d;
+    --plum-lighter2: #683356;
+    --plum-lighter3: #824d70;
+    --plum-lighter4: #9b6689;
+    --plum-lighter5: #b47fa2;
+    --mauve: #987790;
+    --mauve-lighter: #b291aa;
+    --mauve-lighter2: #cbaac3;
+    --mauve-lighter3: #e5c4dd;
+    --mauve-lighter4: #feddf6;
+    --mauve-lighter5: #fff6ff;
+    --whitish: #f6f0f5;
+    --purple-white: #f2e8ef;
+    --very-light-purple: #efe3ec;
+    --purple-brown: #604b5a;
+    --dark-purple-brown: #5a4a55;
+    --purple-pink: #e099ce;
+    --light-purple: #d19cc3;
+    --mid-purple: #a15a8f;
+    --black: #191317;
+    --white: #ffffff;
+    --pink: #f7c6d5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: var(--very-light-purple);
+    font-family: "Montserrat", sans-serif;
+    color: var(--plum);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    max-width: 120rem;
+	margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+main {
+	padding: 0 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a,
+a:visited { 
+	color: var(--purple-pink);
+	text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+a:hover,
+a:focus,
+a:active {
+	color: var(--plum-lighter4);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1,
+h2, 
+h3 {
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
+    padding-bottom: .25rem;
+    border-bottom: .15rem solid var(--light-purple);
 }

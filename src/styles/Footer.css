@@ -1,0 +1,14 @@
+footer {
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--plum);
+    color: var(--white);
+    box-shadow: 0 -0.25rem 0.125rem -0.125rem #808080c9;
+}
+
+footer p {
+    font-size: 1rem;
+    text-shadow: .15rem .15rem 0rem var(--black);
+}
