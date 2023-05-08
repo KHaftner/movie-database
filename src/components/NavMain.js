@@ -11,10 +11,13 @@ function NavMain() {
         </li>
         <li>
           <NavLink to="/about">About</NavLink>
+        </li>    
+        <li>
+          <NavLink to="/favs">Favs</NavLink>
         </li>
         <li>
-          <NavLink to="/favs">Favourites</NavLink>
-        </li>
+          <NavLink to="/contact">Contact</NavLink>
+        </li>            
       </ul> 
 		</nav>
 	);
