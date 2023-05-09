@@ -1,9 +1,16 @@
 .site-header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: var(--plum);
     color: var(--white);
     box-shadow: 0 0.25rem 0.125rem -0.125rem #808080c9;
+}
+
+.logo-and-header {
+    display: flex;
+    align-items: center;
+    /* Logo looks kinda pixely, fix this somehow. */
 }
 
 .site-header img {
@@ -17,4 +24,5 @@
     font-size: 2rem;
     font-weight: 800;
     text-shadow: .25rem .25rem 0rem var(--black);
+    padding-bottom: .25rem;
 }
