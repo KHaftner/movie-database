@@ -5,7 +5,7 @@ import PageHome from "../pages/PageHome";
 import PageMovie from '../pages/PageMovie';
 import PageNotFound from "../pages/PageNotFound";
 
-
+/* 
 function Main() {
   return (
     <header className="page-header">
@@ -15,3 +15,4 @@ function Main() {
 }
 
 export default Main;
+*/

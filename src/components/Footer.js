@@ -3,8 +3,9 @@ import "../styles/Footer.css";
 function Footer() {
   return (
       <footer>
-        {/* change message? */}
-          <p>&copy; 2023 FWD 33</p>
+          <p><span>Created for educational purposes.</span></p>
+          <p>By Kassandra Haftner & Amy Turton
+          <br />&copy; 2023 FWD 33</p>
       </footer>
   )
 }

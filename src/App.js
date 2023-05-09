@@ -11,12 +11,30 @@ import PageFavs from "./pages/PageFavs";
 import PageHome from "./pages/PageHome";
 import PageMovie from "./pages/PageMovie";
 import PageNotFound from "./pages/PageNotFound";
+import MovieList from "./components/MovieList";
+import React, { useEffect, useState } from "react";
 
 function App() {
+
+	const [movies, setMovies] = useState([]);
+
+	const getUsTheMovies = async () => {
+		const popular = "https://api.themoviedb.org/3/movie/popular?api_key=cc622192f2417beca927f1e14b1278dd";
+		const response = await fetch(popular);
+		const responseJSON = await response.json();
+
+		setMovies(responseJSON);
+	};
+
+	useEffect( () => {
+		getUsTheMovies();
+
+	}, []);
+
 	return (
 		<div className="App">
 			<Header className="Page-header" />
-			<NavMain />
+
 			<NavSort />
 
 			<header className="page-header">
@@ -32,6 +50,15 @@ function App() {
 					<Route path="/movie/:id" element={<PageMovie />} />
 					<Route path="*" element={<PageNotFound />} />
 				</Routes>
+
+				<div className="container movie-app">
+					<div className="row">
+						<p>( Filter goes above the movies, somewhere around here... Popular, Top Rated, Now Playing, Upcoming )</p>
+						<p>( Movies should show up here once we figure out this API stuff... )</p>
+						<MovieList movies={movies} />
+					</div>
+				</div>
+
 			</main>
 
 			<Footer className="footer" />
