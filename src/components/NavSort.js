@@ -1,3 +1,4 @@
+import "../styles/NavMain.css";
 import { NavLink } from "react-router-dom";
 
 function NavSort() {
@@ -17,7 +18,8 @@ function NavSort() {
 					<li>
 						<NavLink to="/sort/upcoming">Upcoming</NavLink>
                 </li>
-            	</ul>*/}
+            	</ul> */}
 		</nav>
 	);
 }
+export default NavSort;
