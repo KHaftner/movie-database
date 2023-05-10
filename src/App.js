@@ -22,8 +22,9 @@ function App() {
 		const popular = "https://api.themoviedb.org/3/movie/popular?api_key=cc622192f2417beca927f1e14b1278dd";
 		const response = await fetch(popular);
 		const responseJSON = await response.json();
-
-		setMovies(responseJSON);
+		
+		console.log(responseJSON.results);
+		setMovies(responseJSON.results);
 	};
 
 	useEffect( () => {
