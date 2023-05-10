@@ -1,0 +1,23 @@
+/* temporary styling to get it to show up, I just yoinked and slightly altered the NavMain style */
+nav ul {
+    padding: 0 1rem;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav li {
+    padding: 1rem;
+}
+
+nav a,
+nav a:visited {
+    color: var(--purple-dark);
+    letter-spacing: .15rem;
+    transition: .5s ease-out;
+}
+
+nav a:hover {
+    color: var(--mauve-lighter3);
+    border-bottom: .1rem solid var(--white);
+}
