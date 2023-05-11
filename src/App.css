@@ -63,6 +63,12 @@ h3 {
     border-bottom: none;
 }
 
+.page-header {
+    max-width: 120rem;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
 .page-header img {
     position: relative;
     top: -4rem;

@@ -1,4 +1,6 @@
 .site-header {
+    max-width: 120rem;
+    margin: 0 auto;
     position: fixed;
     z-index: 9999;
     top: 0;

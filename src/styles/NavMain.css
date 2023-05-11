@@ -17,7 +17,7 @@ nav a:visited {
     transition: .5s ease-out;
 }
 
-nav a:hover {
+.site-header nav a:hover {
     color: var(--mauve-lighter3);
-    border-bottom: .1rem solid var(--white);
+    border-bottom: .05rem solid var(--white);
 }
