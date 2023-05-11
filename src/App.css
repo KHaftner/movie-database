@@ -35,10 +35,6 @@ body {
 	margin: 0 auto;
 }
 
-main {
-	padding: 0 1rem;
-}
-
 a,
 a:visited { 
 	color: var(--purple-pink);
@@ -57,10 +53,20 @@ h3 {
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 600;
     padding-bottom: .25rem;
-    border-bottom: .15rem solid var(--light-purple);
+    border-bottom: .15rem solid var(--plum-lighter5);
 }
 
-.movie-app > .row {
-	overflow-x: auto;
-	flex-wrap: nowrap;
+.movies-page h2 {
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25rem;
+    border-bottom: none;
+}
+
+.page-header img {
+    position: relative;
+    top: -4rem;
+    left: 0;
+    right: 0;
+    size: cover;
 }

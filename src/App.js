@@ -14,19 +14,24 @@ import PageMovies from "./pages/PageMovies";
 import PageNotFound from "./pages/PageNotFound";
 import MovieList from "./components/MovieList";
 import React, { useEffect, useState } from "react";
+import bannerImage from "./images/banner-image.jpg";
 
 function App() {
 
 
 	return (
 		<div className="App">
+
 			<Header className="Page-header" />
+			
+				<header className="page-header">
+					<div class="h2-container">
+						<h2>Home Page of the Movie Lovers</h2>
+					</div>
+					<img src={bannerImage} alt="An image of a group of friends laughing and watching a movie" />
+				</header>
 
 			<NavSort />
-
-			<header className="page-header">
-				<h2>Home Page of the Movie Lovers</h2>
-			</header>
 
 			<main>
 				<Routes>
@@ -40,19 +45,16 @@ function App() {
 
 				</Routes>
 
+				{ /*
+
 				<div className="container movie-app">
 					<div className="row">
-						<p>
-							( Filter goes above the movies, somewhere around
-							here... Popular, Top Rated, Now Playing, Upcoming )
-						</p>
-						<p>
-							( Movies should show up here once we figure out this
-							API stuff... )
-						</p>
 
 					</div>
 				</div>
+
+				*/}
+
 			</main>
 
 			<Footer className="footer" />

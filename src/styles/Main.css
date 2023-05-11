@@ -2,11 +2,36 @@
     background-color: var(--very-light-purple);
 }
 
+.movies-page {
+    background-color: #350023e7;
+    position: relative;
+    top: -27.6rem;
+    z-index: 6;
+    color: var(--purple-white);
+    padding: 1rem 0;
+}
+
+.h2-container {
+    position: relative;
+    right: 0;
+    top: 25rem;
+    padding: .75rem 0;
+    background-color: #f2e8efb3;
+    z-index: 2;
+}
+
+.page-header img {
+    top: -5rem;
+}
+
 .page-header h2 {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     color: var(--plum);
-    font-size: 2rem;
     letter-spacing: .25rem;
     padding: 0 1rem .05rem;
+    text-align: right;
+    font-size: 2.5rem;
+    padding-bottom: .25rem;
+    z-index: 3;
 }
