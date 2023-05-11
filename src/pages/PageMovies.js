@@ -11,7 +11,19 @@ const PageMovies = () => {
 	const [movies, setMovies] = useState([]);
 
 	const getUsTheMovies = async () => {
+
 		const filterChoice = `https://api.themoviedb.org/3/movie/${filter}?api_key=cc622192f2417beca927f1e14b1278dd&language=en-US`;
+
+		{ /* Code I tried to add below doesn't work... I'm trying to set the home page to load a filter by default and not just if it's clicked.  Brain too tired right now, lol... Maybe we use those default props things?  Maybe you will know what to do. :)
+		
+		let filterChoice = "";
+		if (filter) {
+			filterChoice = `https://api.themoviedb.org/3/movie/${filter}?api_key=cc622192f2417beca927f1e14b1278dd&language=en-US`;
+		} else {
+			filterChoice = `https://api.themoviedb.org/3/movie/popular?api_key=cc622192f2417beca927f1e14b1278dd&language=en-US`;
+		}
+		*/ }
+
 		{/*&page=${page}*/}
 		const response = await fetch(filterChoice);
 		const responseJSON = await response.json();

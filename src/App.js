@@ -25,7 +25,7 @@ function App() {
 			<Header className="Page-header" />
 			
 				<header className="page-header">
-					<div class="h2-container">
+					<div className="h2-container">
 						<h2>Home Page of the Movie Lovers</h2>
 					</div>
 					<img src={bannerImage} alt="An image of a group of friends laughing and watching a movie" />
@@ -33,7 +33,7 @@ function App() {
 
 			<NavSort />
 
-			<main>
+			<main id="main-content">
 				<Routes>
 					<Route path="/" element={<PageHome />} />
 					{/* <Route path="/" element={<PageAbout />} /> */}

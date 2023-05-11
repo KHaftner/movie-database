@@ -1,3 +1,10 @@
+#main-content {
+    position: sticky;
+    margin-top: -27.5rem;
+    margin-bottom: -1rem;
+}
+
+
 .page-content {
     background-color: var(--very-light-purple);
 }
@@ -5,7 +12,6 @@
 .movies-page {
     background-color: #350023e7;
     position: relative;
-    top: -27.6rem;
     z-index: 6;
     color: var(--purple-white);
     padding: 1rem 0;
