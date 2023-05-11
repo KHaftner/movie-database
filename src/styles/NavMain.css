@@ -11,6 +11,7 @@ nav li {
 
 nav a,
 nav a:visited {
+    font-weight: 600;
     color: var(--purple-white);
     letter-spacing: .15rem;
     transition: .5s ease-out;
