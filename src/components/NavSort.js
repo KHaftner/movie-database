@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 function NavSort() {
 	return (
 		<nav className="filter-nav">
-			{/* commented out UL is from class 9 example */}
 			<ul>
 				<li>
 					<NavLink to="/movies/popular/1">Popular</NavLink>

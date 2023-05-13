@@ -1,5 +1,6 @@
 import "../styles/MovieList.css";
 import { BASE_URL_POSTER } from "../globals/globalVariables";
+import FavButton from "./FavButton";
 
 const MovieList = (props) => {
 	return (
@@ -13,6 +14,9 @@ const MovieList = (props) => {
 								<img src={`${BASE_URL_POSTER}${movie.poster_path}`} alt="movie"></img>
 								<div className="overlay">
 									<div className="overlay-text"><p>Insert Overview (?) here. If so, needs to have a maxLength set.</p></div>
+									{/* toggle heart based on whether the movie is in favsArray*/}
+									<FavButton movie={movie} />
+
 								</div>
 							</div>
 						</div>
