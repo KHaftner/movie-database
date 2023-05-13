@@ -5,6 +5,7 @@ import Main from "./components/Main";
 import Footer from "./components/Footer";
 import NavMain from "./components/NavMain";
 import NavSort from "./components/NavSort";
+import HomeLayout from "./components/HomeLayout";
 import PageAbout from "./pages/PageAbout";
 import PageContact from "./pages/PageContact";
 import PageFavourites from "./pages/PageFavourites";
@@ -19,19 +20,7 @@ import bannerImage from "./images/banner-image.jpg";
 function App() {
 	return (
 		<div className="App">
-			<Header className="Page-header" />
-
-			<header className="page-header">
-				<div className="h2-container">
-					<h2>Home Page of the Movie Lovers</h2>
-				</div>
-				<img
-					src={bannerImage}
-					alt="An image of a group of friends laughing and watching a movie"
-				/>
-			</header>
-
-			<NavSort />
+			<Header />
 
 			<main id="main-content">
 				<Routes>
@@ -47,15 +36,6 @@ function App() {
 					<Route path="*" element={<PageNotFound />} />
 				</Routes>
 
-				{/*
-
-				<div className="container movie-app">
-					<div className="row">
-
-					</div>
-				</div>
-
-				*/}
 			</main>
 
 			<Footer className="footer" />

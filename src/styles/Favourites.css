@@ -1,0 +1,31 @@
+#favourites-header img {
+    position: relative;
+    top: -10rem;
+    filter: opacity(.75);
+}
+
+.favourites-container {
+    position: relative;
+    right: 0;
+    top: 8rem;
+    padding: .75rem 0;
+    background-color: #f2e8efb3;
+    z-index: 2;
+}
+
+#favourites-header h2 {
+    text-align: center;
+}
+
+#favourites-header {
+    margin-bottom: 20rem;
+}
+
+.favourites-movie-container {
+    background-color: var(--plum-lighter3);
+}
+
+.favourite-movie-container .movie-container {
+    display: block;
+    max-width: 10rem;
+}

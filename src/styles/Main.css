@@ -1,15 +1,14 @@
-#main-content {
+/* #main-content {
     position: sticky;
     margin-top: -27.5rem;
-    margin-bottom: -1rem;
-}
-
+    margin-bottom: -1rem; 
+} */
 
 .page-content {
     background-color: var(--very-light-purple);
 }
 
-.movies-page {
+.filter-text {
     background-color: #350023e7;
     position: relative;
     z-index: 6;
@@ -18,7 +17,7 @@
 }
 
 .h2-container {
-    position: relative;
+    position: sticky;
     right: 0;
     top: 25rem;
     padding: .75rem 0;
