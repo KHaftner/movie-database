@@ -1,5 +1,9 @@
 .filter-text {
-    padding: 0 1rem;
+    position: relative;
+    top: -27.5rem;
+    z-index: 8;
+    background-color: #350023e7;
+    padding: 1rem;
 }
 
 .all-movies {
@@ -9,6 +13,8 @@
     overflow-x: scroll;
     padding: 1rem;
     background-color: var(--whitish);
+    position: sticky;
+    margin-top: -27.5rem;
 }
 
 ::-webkit-scrollbar {

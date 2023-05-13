@@ -14,6 +14,7 @@ import React, { useEffect, useState } from "react";
 import MovieList from "../components/MovieList";
 import "../styles/MovieList.css";
 import FavButton from "../components/FavButton";
+import FavouritesLayout from "../components/FavouritesLayout";
 
 const PageFavourites = () => {
 	document.title = `${appTitle} - Favourites`;
@@ -24,12 +25,16 @@ const PageFavourites = () => {
 	if (FavouriteMovies) {
 		return (
 			<section className="movies-page">
-				<MovieList movies={FavouriteMovies} />
+				<FavouritesLayout />
+				<div className="favourite-movie-container">
+					<MovieList movies={FavouriteMovies} />
+				</div>
 			</section>
 		);
 	}else{
         return (
             <section className="movies-page">
+				<FavouritesLayout />
                 <p>Sorry, no movies stored in your favourites! Let's make this message better...</p>
             </section>
         )

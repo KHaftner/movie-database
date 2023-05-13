@@ -1,0 +1,51 @@
+.about-container {
+    position: relative;
+    right: 0;
+    top: 8rem;
+    padding: .75rem 0;
+    background-color: #f2e8efb3;
+    z-index: 2;
+}
+
+.about-text-container {
+    background-color: #fff6ffa2;
+    position: absolute;
+    top: 30rem;
+    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#about-h2 {
+    text-align: center;
+}
+
+#about-header {
+    overflow: hidden;
+}
+
+#about-header img {
+    filter: opacity(.2);
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: -6rem;
+}
+
+.about p {
+    font-weight: 500;
+    margin: 1rem auto;
+    max-width: 40rem;
+    padding-left: 1rem;
+}
+
+.about .tmdb-logo {
+    padding-left: 1rem;
+    width: 7.5rem;
+    margin-top: 1rem;
+}
+
+.about {
+    position: sticky;
+}
