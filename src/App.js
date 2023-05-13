@@ -7,7 +7,7 @@ import NavMain from "./components/NavMain";
 import NavSort from "./components/NavSort";
 import PageAbout from "./pages/PageAbout";
 import PageContact from "./pages/PageContact";
-import PageFavs from "./pages/PageFavs";
+import PageFavourites from "./pages/PageFavourites";
 import PageHome from "./pages/PageHome";
 import PageMovie from "./pages/PageMovie";
 import PageMovies from "./pages/PageMovies";
@@ -17,35 +17,37 @@ import React, { useEffect, useState } from "react";
 import bannerImage from "./images/banner-image.jpg";
 
 function App() {
-
-
 	return (
 		<div className="App">
-
 			<Header className="Page-header" />
-			
-				<header className="page-header">
-					<div className="h2-container">
-						<h2>Home Page of the Movie Lovers</h2>
-					</div>
-					<img src={bannerImage} alt="An image of a group of friends laughing and watching a movie" />
-				</header>
+
+			<header className="page-header">
+				<div className="h2-container">
+					<h2>Home Page of the Movie Lovers</h2>
+				</div>
+				<img
+					src={bannerImage}
+					alt="An image of a group of friends laughing and watching a movie"
+				/>
+			</header>
 
 			<NavSort />
 
 			<main id="main-content">
 				<Routes>
 					<Route path="/" element={<PageHome />} />
-					{/* <Route path="/" element={<PageAbout />} /> */}
+					<Route path="/about" element={<PageAbout />} />
 					<Route path="/contact" element={<PageContact />} />
-					<Route path="/favs" element={<PageFavs />} />
+					<Route path="/favs" element={<PageFavourites />} />
 					<Route path="/movie/:id" element={<PageMovie />} />
-					<Route path="/movies/:filter/:page" element={<PageMovies />} />
+					<Route
+						path="/movies/:filter/:page"
+						element={<PageMovies />}
+					/>
 					<Route path="*" element={<PageNotFound />} />
-
 				</Routes>
 
-				{ /*
+				{/*
 
 				<div className="container movie-app">
 					<div className="row">
@@ -54,7 +56,6 @@ function App() {
 				</div>
 
 				*/}
-
 			</main>
 
 			<Footer className="footer" />
