@@ -3,6 +3,11 @@ const FavButton = (props) => {
 		<>
 			<span className="mr-2">Add to Favourites</span>
 			{/* temporarily made a crappy button fav, will figure out heart or better button part later */}
+			{/* to do: 
+			add instead of replace
+			new feature to the onClick: check if already in list, remove from list
+			
+			 */}			
 			<button
 				onClick={() => {
 					localStorage.setItem(
