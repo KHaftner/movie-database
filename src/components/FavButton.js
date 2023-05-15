@@ -3,25 +3,56 @@ const FavButton = (props) => {
 		<>
 			<span className="mr-2">Add to Favourites</span>
 			{/* temporarily made a crappy button fav, will figure out heart or better button part later */}
-			{/* to do: 
-			add instead of replace
-			new feature to the onClick: check if already in list, remove from list
-			
-			 */}			
 			<button
 				onClick={() => {
-					localStorage.setItem(
-						"FavList",
-						JSON.stringify([props.movie])
-					);
+
+					let clickedOnMovie = props.movie;
+					let clickedOnMovieID = props.movie.id;
+					let oldFavListStr = localStorage.getItem("FavList");
+
+					if (localStorage.getItem("FavList") != undefined) {
+						let favList = JSON.parse(oldFavListStr);
+						console.log(favList);
+
+						if (
+							favList.findIndex(
+								(item) => item.id == clickedOnMovieID
+							) != -1
+						) {
+							let unFavIndex = favList.findIndex(
+								(item) => item.id == clickedOnMovieID
+							);
+							console.log("in list: ");
+							console.log(unFavIndex);
+							favList.splice(unFavIndex, 1);
+							localStorage.setItem(
+								"FavList",
+								JSON.stringify(favList)
+							);
+
+						} else {
+							// console.log(oldFavList);
+							favList.push(clickedOnMovie);
+							console.log(favList);
+							localStorage.setItem(
+								"FavList",
+								JSON.stringify(favList)
+							);
+						}
+					} else {
+						console.log(
+							"this message happens when FavList is first created"
+						);
+						localStorage.setItem(
+							"FavList",
+							JSON.stringify([props.movie])
+						);
+					}
 					let test = localStorage.getItem("FavList");
-					console.log(test);
 				}}
 			>
 				FAV
 			</button>
-
-			{/* I haven't added the remove from local storage part yet */}
 
 			{/* // I'll come back to this to see if we can fill/unfill the heart based on fav status
 			<svg

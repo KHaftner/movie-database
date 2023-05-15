@@ -27,7 +27,7 @@ const PageMovies = () => {
 		const response = await fetch(filterChoice);
 		const responseJSON = await response.json();
 
-		console.log(responseJSON.results);
+		// console.log(responseJSON.results);
 		setMovies(responseJSON.results);
 	};
 

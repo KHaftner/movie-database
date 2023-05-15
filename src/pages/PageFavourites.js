@@ -1,12 +1,5 @@
 // this is where movies from local storage will be displayed
-// it will follow the structure of PageMovies.js
-
-// to do:
-// favsArray: array of movie objects in localStorage
-// when heart is clicked: how does a movie get into localStorage?
-// PARTLY DONE (need error handling if no movies in Favourites)
-
-// when heart is unclicked: how does a movie get removed from localStorage?
+// it will follow the structure of PageMovies.js except with no filterChoice
 
 import { useParams } from "react-router-dom";
 import { appTitle } from "../globals/globalVariables";
@@ -20,7 +13,7 @@ const PageFavourites = () => {
 	document.title = `${appTitle} - Favourites`;
 	const [movies, setMovies] = useState([]);
 	const FavouriteMovies = JSON.parse(localStorage.getItem("FavList"));
-	console.log(FavouriteMovies);
+	// console.log(FavouriteMovies);
 
 	if (FavouriteMovies) {
 		return (
