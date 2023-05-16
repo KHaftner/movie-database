@@ -1,6 +1,8 @@
 import "../styles/MovieList.css";
 import { BASE_URL_POSTER } from "../globals/globalVariables";
 import FavButton from "./FavButton";
+import { Link } from 'react-router-dom';
+import PageMovie from '../pages/PageMovie';
 
 const MovieList = (props) => {
 	return (
@@ -13,7 +15,9 @@ const MovieList = (props) => {
 							<div className="movie-poster">
 								<img src={`${BASE_URL_POSTER}${movie.poster_path}`} alt="movie"></img>
 								<div className="overlay">
-									<div className="overlay-text"><p>Insert Overview (?) here. If so, needs to have a maxLength set.</p></div>
+									<div className="overlay-text">
+										<Link to={`movie/${movie.id}`}><p>View Details</p></Link>
+									</div>
 									{/* toggle heart based on whether the movie is in favsArray*/}
 									<FavButton movie={movie} />
 
