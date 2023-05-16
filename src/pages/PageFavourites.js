@@ -3,35 +3,38 @@
 
 import { useParams } from "react-router-dom";
 import { appTitle } from "../globals/globalVariables";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useContext } from "react";
 import MovieList from "../components/MovieList";
 import "../styles/MovieList.css";
 import FavButton from "../components/FavButton";
 import FavouritesLayout from "../components/FavouritesLayout";
+import { FavListContext } from "../components/context/Context";
 
 const PageFavourites = () => {
 	document.title = `${appTitle} - Favourites`;
-	const [movies, setMovies] = useState([]);
-	const FavouriteMovies = JSON.parse(localStorage.getItem("FavList"));
+	const [favList, setFavList] = useContext(FavListContext);
 	// console.log(FavouriteMovies);
 
-	if (FavouriteMovies) {
+	if (favList) {
 		return (
 			<section className="movies-page">
 				<FavouritesLayout />
 				<div className="favourite-movie-container">
-					<MovieList movies={FavouriteMovies} />
+					<MovieList movies={favList} />
 				</div>
 			</section>
 		);
-	}else{
-        return (
-            <section className="movies-page">
+	} else {
+		return (
+			<section className="movies-page">
 				<FavouritesLayout />
-                <p>Sorry, no movies stored in your favourites! Let's make this message better...</p>
-            </section>
-        )
-    }
+				<p>
+					Sorry, no movies stored in your favourites! Let's make this
+					message better...
+				</p>
+			</section>
+		);
+	}
 };
 
 export default PageFavourites;
