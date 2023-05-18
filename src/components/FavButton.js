@@ -2,6 +2,7 @@ import EmptyHeartIcon from "./EmptyHeartIcon";
 import FilledHeartIcon from "./FilledHeartIcon";
 import React, { createContext, useContext } from "react";
 import { FavListContext } from "../components/context/Context";
+import "../styles/HeartIcon.css";
 
 const FavButton = (props) => {
 	let clickedOnMovie = props.movie;
@@ -14,8 +15,8 @@ const FavButton = (props) => {
 		if (favList.findIndex((item) => item.id == clickedOnMovieID) != -1) {
 			return (
 				<>
-					<span className="mr-2">Remove from Favourites</span>
-					<button
+					{/* <span className="mr-2">Remove from Favourites</span> */}
+					<FilledHeartIcon
 						className="fav-toggle fav-toggle-off"
 						onClick={() => {
 							let unFavIndex = favList.findIndex(
@@ -25,16 +26,16 @@ const FavButton = (props) => {
 							// console.log(unFavIndex);
 							setFavList(favList.toSpliced(unFavIndex, 1));
 						}}
-					>
-						-test-
-					</button>
+					></FilledHeartIcon>
 				</>
 			);
 		} else {
 			return (
 				<>
-					<span className="mr-2">Add to Favourites</span>
-					<button
+					{/* <span className="mr-2">Add to Favourites</span> */}
+					<EmptyHeartIcon
+						// role="img"
+						// aria-labelledby="emptyHeartIcon"
 						className="fav-toggle fav-toggle-on"
 						onClick={() => {
 							favList.push(clickedOnMovie);
@@ -42,8 +43,8 @@ const FavButton = (props) => {
 							setFavList(Array.from(favList));
 						}}
 					>
-						+test+
-					</button>
+						{/* <EmptyHeartIcon /> */}
+					</EmptyHeartIcon>
 				</>
 			);
 		}

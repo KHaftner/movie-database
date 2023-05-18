@@ -1,16 +1,25 @@
 import React from "react";
 
 function EmptyHeartIcon(props) {
-    return (
-        <svg viewBox="0 0 24 24" fill="currentColor" {...props}>
-            <path d="M12 9.229c.234-1.12 1.547-6.229 5.382-6.229 2.22 0 4.618 1.551 4.618 5.003 0 3.907-3.627 8.47-10 12.629-6.373-4.159-10-8.722-10-12.629 0-3.484 2.369-5.005 4.577-5.005 3.923 0 5.145 5.126 5.423 6.231zm-12-1.226c0 4.068 3.06 9.481 12 14.997 8.94-5.516 12-10.929 12-14.997 0-7.962-9.648-9.028-12-3.737-2.338-5.262-12-4.27-12 3.737z"/>
-        </svg>
-    )
+	return (
+		<svg
+			role="img"
+			aria-labelledby="emptyHeartIcon"
+			viewBox="0 0 24 24"
+			fill="currentColor"
+			{...props}
+		>
+			{/*  https://iconmonstr.com/favorite-9-svg/ */}
+			<path d="M19.5 10c-2.483 0-4.5 2.015-4.5 4.5s2.017 4.5 4.5 4.5 4.5-2.015 4.5-4.5-2.017-4.5-4.5-4.5zm2.5 5h-2v2h-1v-2h-2v-1h2v-2h1v2h2v1zm-6.527 4.593c-1.108 1.086-2.275 2.219-3.473 3.407-6.43-6.381-12-11.147-12-15.808 0-4.005 3.098-6.192 6.281-6.192 2.197 0 4.434 1.042 5.719 3.248 1.279-2.195 3.521-3.238 5.726-3.238 3.177 0 6.274 2.171 6.274 6.182 0 .746-.156 1.496-.423 2.253-.527-.427-1.124-.768-1.769-1.014.122-.425.192-.839.192-1.239 0-2.873-2.216-4.182-4.274-4.182-3.257 0-4.976 3.475-5.726 5.021-.747-1.54-2.484-5.03-5.72-5.031-2.315-.001-4.28 1.516-4.28 4.192 0 3.442 4.742 7.85 10 13l2.109-2.064c.376.557.839 1.048 1.364 1.465z" />
+			<title id="emptyHeartIcon">Add to Favourites</title>
+		</svg>
+	);
 }
 
 export default EmptyHeartIcon;
 
-{ /* Example of how to use this component: 
+{
+	/* Example of how to use this component: 
         import EmptyHeartIcon from "../components/FilledHeartIcon";    
 		<EmptyHeartIcon className="to give it a fill colour" width="__px" height="__px" />
     */
