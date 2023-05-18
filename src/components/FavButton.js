@@ -14,7 +14,7 @@ const FavButton = (props) => {
 
 		if (favList.findIndex((item) => item.id == clickedOnMovieID) != -1) {
 			return (
-				<>
+				<div className="favButton">
 					{/* <span className="mr-2">Remove from Favourites</span> */}
 					<FilledHeartIcon
 						className="fav-toggle fav-toggle-off"
@@ -27,11 +27,11 @@ const FavButton = (props) => {
 							setFavList(favList.toSpliced(unFavIndex, 1));
 						}}
 					></FilledHeartIcon>
-				</>
+				</div>
 			);
 		} else {
 			return (
-				<>
+				<div className="favButton">
 					{/* <span className="mr-2">Add to Favourites</span> */}
 					<EmptyHeartIcon
 						// role="img"
@@ -45,7 +45,7 @@ const FavButton = (props) => {
 					>
 						{/* <EmptyHeartIcon /> */}
 					</EmptyHeartIcon>
-				</>
+				</div>
 			);
 		}
 	} else {

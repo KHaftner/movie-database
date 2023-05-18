@@ -1,7 +1,13 @@
+.favButton {
+	display: flex;
+	justify-content: flex-end;
+}
+
 .fav-toggle {
-	height: 3em;
-	width: 3em;
+	height: 2.5em;
+	width: 2.5em;
 	background-color: none;
 	color: var(--mauve-lighter5);
 	cursor: auto;
+	margin: 0.5em;
 }
