@@ -1,6 +1,6 @@
 .filter-text {
     position: relative;
-    top: -27.5rem;
+    top: -28.5rem;
     z-index: 8;
     background-color: #350023e7;
     padding: 1rem;
@@ -14,7 +14,7 @@
     padding: 1rem;
     background-color: var(--whitish);
     position: sticky;
-    margin-top: -27.5rem;
+    margin-top: -28.5rem;
 }
 
 ::-webkit-scrollbar {
@@ -73,11 +73,12 @@
     transform: scale(1);
     z-index: 3;
     border-radius: .75rem;
-    cursor: pointer;
+    cursor: default;
 }
 
 .movie-container .overlay-text {
-    font-size: .9rem;
+    margin-top: 1.25rem;
+    font-size: .75rem;
     color: var(--white);
     position: absolute;
     top: 50%;
@@ -86,4 +87,19 @@
     line-height: 1rem;
     transform: translate(-25%, -50%);
     text-align: left;
+}
+
+.movie-container .view-details {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--plum);
+    text-align: center;
+    border-radius: 1rem;
+    padding: .5rem 0;
+    background-color: var(--mauve-lighter3);
+}
+
+.movie-container .view-details:hover {
+    background-color: var(--plum-lighter4);
+    color: var(--white);
 }

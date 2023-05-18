@@ -14,7 +14,7 @@ const FavButton = (props) => {
 
 		if (favList.findIndex((item) => item.id == clickedOnMovieID) != -1) {
 			return (
-				<div className="favButton">
+				<div className="favButton favourite">
 					{/* <span className="mr-2">Remove from Favourites</span> */}
 					<FilledHeartIcon
 						className="fav-toggle fav-toggle-off"

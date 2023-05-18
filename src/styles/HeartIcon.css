@@ -11,3 +11,11 @@
 	cursor: auto;
 	margin: 0.5em;
 }
+
+.favourite .fav-toggle {
+	fill: #f10726;
+}
+
+.fav-toggle:hover {
+	cursor: pointer;
+}

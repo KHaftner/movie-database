@@ -1,4 +1,53 @@
+import React from "react";
 import "../styles/NavSort.css";
+
+function NavSort({ handleCategoryChange, selectedCategory }) {
+  const handleClick = (newCategory) => {
+    handleCategoryChange(newCategory);
+  };
+
+  return (
+    <nav className="filter-nav">
+      <ul>
+        <li>
+          <button
+            className={selectedCategory === "popular" ? "active" : ""}
+            onClick={() => handleClick("popular")}>
+            Popular
+          </button>
+        </li>
+        <li>
+          <button
+            className={selectedCategory === "top_rated" ? "active" : ""}
+            onClick={() => handleClick("top_rated")}>
+            Top Rated
+          </button>
+        </li>
+        <li>
+          <button
+            className={selectedCategory === "now_playing" ? "active" : ""}
+            onClick={() => handleClick("now_playing")}>
+            Now Playing
+          </button>
+        </li>
+        <li>
+          <button
+            className={selectedCategory === "upcoming" ? "active" : ""}
+            onClick={() => handleClick("upcoming")}>
+            Upcoming
+          </button>
+        </li>
+      </ul>
+    </nav>
+  );
+}
+
+export default NavSort;
+
+
+{ /* I modified this slightly to test using a button instead to see if I can make a select drop-down list tomorrow for small screens to filter.  It might be easier this way, but the original code is below in case I mess something up and we need to go back to what worked before.  :)  
+
+
 import { NavLink } from "react-router-dom";
 
 function NavSort() {
@@ -22,5 +71,4 @@ function NavSort() {
 			</ul>
 		</nav>
 	);
-}
-export default NavSort;
+}  */}
