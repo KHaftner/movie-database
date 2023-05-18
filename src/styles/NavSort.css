@@ -1,7 +1,7 @@
 /* temporary styling to get it to show up, I just yoinked and slightly altered the NavMain style */
 .filter-nav ul {
     position: relative;
-    top: -27.75rem;
+    top: -28.25rem;
     padding: 0;
     list-style: none;
     display: flex;
@@ -9,17 +9,9 @@
     z-index: 4;
 }
 
-.filter-nav li {
+.filter-nav button {
+    border: none;
     font-size: .9rem;
-    padding: 1rem;
-}
-
-.filter-nav li:hover {
-    font-size: .95rem;
-}
-
-.filter-nav a,
-nav a:visited {
     color: var(--purple-dark);
     letter-spacing: .15rem;
     transition: .3s ease-out;
@@ -29,8 +21,13 @@ nav a:visited {
     font-weight: 700;
 }
 
-.filter-nav a:hover {
+.filter-nav button:hover {
     background-color: var(--plum);
     color: var(--white);
-    border: none;
+    cursor: pointer;
+}
+
+.filter-nav button.active {
+    background-color: var(--plum);
+    color: var(--white);
 }
