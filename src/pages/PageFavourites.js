@@ -35,7 +35,14 @@ const PageFavourites = () => {
 		return (
 			<section className="movies-page">
 				<FavouritesLayout />
-				<p className="favourites-middle">Oh nooo, no favourites yet!</p>
+				<div className="favourites-middle">
+					<p>
+						This page is where all your <strong>favourite</strong>{" "}
+						movies will be stored! &hearts;
+					</p>
+					<p>But... oh nooo, no favourites yet!</p>
+					<p>To a movie to this page, just click its heart icon.</p>
+				</div>
 			</section>
 		);
 	}
