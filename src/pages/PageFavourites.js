@@ -13,9 +13,9 @@ import { FavListContext } from "../components/context/Context";
 const PageFavourites = () => {
 	document.title = `${appTitle} - Favourites`;
 	const [favList, setFavList] = useContext(FavListContext);
-	// console.log(FavouriteMovies);
+	// console.log({favList});
 
-	if (favList) {
+	if (favList && favList.length > 0) {
 		return (
 			<section className="movies-page">
 				<FavouritesLayout />
@@ -35,10 +35,7 @@ const PageFavourites = () => {
 		return (
 			<section className="movies-page">
 				<FavouritesLayout />
-				<p>
-					Sorry, no movies stored in your favourites! Let's make this
-					message better...
-				</p>
+				<p className="favourites-middle">Oh nooo, no favourites yet!</p>
 			</section>
 		);
 	}
