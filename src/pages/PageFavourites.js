@@ -20,7 +20,10 @@ const PageFavourites = () => {
 			<section className="movies-page">
 				<FavouritesLayout />
 				<div className="favourites-middle">
-					<p>This page is where all your <strong>favourite</strong> movies are stored!  &hearts;</p>
+					<p>
+						This page is where all your <strong>favourite</strong>{" "}
+						movies are stored! &hearts;
+					</p>
 					<p>Let's make some popcorn and watch an old fave!</p>
 				</div>
 				<div className="favourite-movie-container">

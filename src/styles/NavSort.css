@@ -1,111 +1,109 @@
 .filter-nav ul {
-    position: relative;
-    top: -25rem;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    z-index: 10;
-  }
+	position: relative;
+	top: -25rem;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: flex-start;
+	z-index: 10;
+}
 
-  .filter-nav li {
-    padding: 1rem .33rem;
-  }
-  
-  .filter-nav button {
-    border: none;
-    font-size: clamp(.7rem, 1vw, .9rem);
-    color: var(--purple-dark);
-    letter-spacing: 0.15rem;
-    transition: 0.3s ease-out;
-    background-color: var(--plum-lighter5);
-    padding: 0.75rem 1rem;
-    border-radius: 3rem;
-    font-weight: 700;
-    position: relative;
-    top: 9.25rem;
-  }
-  
-  .filter-nav button:hover {
-    background-color: var(--plum);
-    color: var(--white);
-    cursor: pointer;
-  }
-  
-  .filter-nav button.active {
-    background-color: var(--plum);
-    color: var(--white);
-  }
+.filter-nav li {
+	padding: 1rem 0.33rem;
+}
 
-  .filter-nav select {
-    display: none;
-  }
-  
-  /* Styles for smaller screens */
-  @media (max-width: 75em) {
-    .filter-nav ul {
-      display: none;
-    }
-  
-    .filter-nav select {
-      display: block;
-      width: 60%;
-      text-align: center;
-      margin: 0 auto;
-      font-size: 0.9rem;
-      color: var(--purple-dark);
-      letter-spacing: 0.15rem;
-      transition: 0.3s ease-out;
-      background-color: var(--plum-lighter5);
-      padding: 0.75rem 1rem;
-      border-radius: 1rem;
-      font-weight: 700;
-      border: none;
-      position: relative;
-      top: -14.75rem;
-      z-index: 10;
-    }
+.filter-nav button {
+	border: none;
+	font-size: clamp(0.7rem, 1vw, 0.9rem);
+	color: var(--purple-dark);
+	letter-spacing: 0.15rem;
+	transition: 0.3s ease-out;
+	background-color: var(--plum-lighter5);
+	padding: 0.75rem 1rem;
+	border-radius: 3rem;
+	font-weight: 700;
+	position: relative;
+	top: 9.25rem;
+}
 
-    select {
-        appearance: none;
-        background: url('../images/down-button.png') no-repeat right center;
-        background-size: 2rem;
-        box-shadow: 0.2rem 0.2rem 0.3rem 0rem #00000067;
-    }
+.filter-nav button:hover {
+	background-color: var(--plum);
+	color: var(--white);
+	cursor: pointer;
+}
 
-    select option {
-        font-weight: 600;
-    }
+.filter-nav button.active {
+	background-color: var(--plum);
+	color: var(--white);
+}
 
-    select:focus {
-        border-radius: 0;
-    }
+.filter-nav select {
+	display: none;
+}
 
-    .favButton {
-        justify-content: center;
-        margin: .5rem;
-        padding: .5rem;
-    }
+/* Styles for smaller screens */
+@media (max-width: 75em) {
+	.filter-nav ul {
+		display: none;
+	}
 
-  }
+	.filter-nav select {
+		display: block;
+		width: 60%;
+		text-align: center;
+		margin: 0 auto;
+		font-size: 0.9rem;
+		color: var(--purple-dark);
+		letter-spacing: 0.15rem;
+		transition: 0.3s ease-out;
+		background-color: var(--plum-lighter5);
+		padding: 0.75rem 1rem;
+		border-radius: 1rem;
+		font-weight: 700;
+		border: none;
+		position: relative;
+		top: -14.75rem;
+		z-index: 10;
+	}
 
-  @media (min-width: 81.25em) {
-    .filter-nav li {
-        padding: 1rem .5rem;
-    }
+	select {
+		appearance: none;
+		background: url("../images/down-button.png") no-repeat right center;
+		background-size: 2rem;
+		box-shadow: 0.2rem 0.2rem 0.3rem 0rem #00000067;
+	}
 
-    .filter-nav button {
-      top: 9rem;
-    }
+	select option {
+		font-weight: 600;
+	}
+
+	select:focus {
+		border-radius: 0;
+	}
+
+	.favButton {
+		justify-content: center;
+		margin: 0.5rem;
+		padding: 0.5rem;
+	}
+}
+
+@media (min-width: 81.25em) {
+	.filter-nav li {
+		padding: 1rem 0.5rem;
+	}
+
+	.filter-nav button {
+		top: 9rem;
+	}
 }
 
 @media (min-width: 87.5em) {
-  .filter-nav li {
-      padding: 1rem .75rem;
-  }
+	.filter-nav li {
+		padding: 1rem 0.75rem;
+	}
 
-  .filter-nav button {
-    top: 8.55rem;
-  }
+	.filter-nav button {
+		top: 8.55rem;
+	}
 }
-  
