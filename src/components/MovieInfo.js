@@ -2,7 +2,7 @@ import { BASE_URL_INDIVIDUAL_SIZE } from "../globals/globalVariables";
 import { BASE_URL_ORIGINAL_SIZE } from "../globals/globalVariables";
 import { appTitle } from "../globals/globalVariables";
 import "../styles/SingleMovie.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import FavButton from "./FavButton";
 
 const MovieInfo = (props) => {
@@ -22,19 +22,31 @@ const MovieInfo = (props) => {
 	}
 	// console.log(movieGenres);
 
-  const heroBackgroundStyle = {
-    backgroundImage: `url(${BASE_URL_ORIGINAL_SIZE}${movie.poster_path})`,
-  };
+	const heroBackgroundStyle = {
+		backgroundImage: `url(${BASE_URL_ORIGINAL_SIZE}${movie.poster_path})`,
+	};
 
-  document.title = `${appTitle} - ${movie.title}`; 
+	document.title = `${appTitle} - ${movie.title}`;
 
-  return (
-    <>
-      <section className="movie-info" key={movie.id}>
-        <div className="single-movie-container">
-          <div className="hero-background" style={heroBackgroundStyle}></div>
-          <div className="movie-flex-container">
-            <Link to={`${BASE_URL_ORIGINAL_SIZE}${movie.poster_path}`} target="_blank"><img className="poster-image" src={`${BASE_URL_INDIVIDUAL_SIZE}${movie.poster_path}`} alt="movie" /></Link>
+	return (
+		<>
+			<section className="movie-info" key={movie.id}>
+				<div className="single-movie-container">
+					<div
+						className="hero-background"
+						style={heroBackgroundStyle}
+					></div>
+					<div className="movie-flex-container">
+						<Link
+							to={`${BASE_URL_ORIGINAL_SIZE}${movie.poster_path}`}
+							target="_blank"
+						>
+							<img
+								className="poster-image"
+								src={`${BASE_URL_INDIVIDUAL_SIZE}${movie.poster_path}`}
+								alt="movie"
+							/>
+						</Link>
 
             <div className="movie-details">
               <div className="single-movie-title-box">
