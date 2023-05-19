@@ -6,19 +6,18 @@ import { Link } from 'react-router-dom';
 import FavButton from "./FavButton";
 
 const MovieInfo = (props) => {
-  const { movie } = props;
-
-  // for each item (object) in array genreArray do object stuff
+	const { movie } = props;
+	// for each item (object) in array genreArray do object stuff
 	const genreArray = movie.genres;
 	// console.dir(movie);
 	let movieGenres = [];
-  let thisMovieGenres = [];
+	let thisMovieGenres = [];
 	for (let index = 0; index < genreArray.length; index++) {
 		const movieGenre = genreArray[index];
 		// console.log(movieGenre.name);
 		movieGenres.push(movieGenre.name);
 		thisMovieGenres = movieGenres.map((oneGenre) => (
-			<li>{oneGenre}</li>
+			<li key={oneGenre}>{oneGenre}</li>
 		));
 	}
 	// console.log(movieGenres);
