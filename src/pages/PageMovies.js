@@ -37,10 +37,10 @@ const PageMovies = () => {
 				selectedCategory={category}
 			/>
 			<div className="filter-text">
-				<h2 class="mobile-sort">
+				<h2 className="mobile-sort">
 					Sort the movies to your heart's content!
 				</h2>
-				<h2 class="desktop-sort">{`${category
+				<h2 className="desktop-sort">{`${category
 					.toUpperCase()
 					.replace(/_/g, " ")}`}</h2>
 				<p>
