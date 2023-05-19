@@ -98,8 +98,9 @@ const MovieInfo = (props) => {
 								</p>
 								<p>
 									<strong>Genres:</strong>{" "}
-									<ul>{thisMovieGenres}</ul>
 								</p>
+								<ul>{thisMovieGenres}</ul>
+
 								<p>
 									<strong>Runtime:</strong> {movie.runtime}{" "}
 									minutes
