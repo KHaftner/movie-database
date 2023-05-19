@@ -1,42 +1,42 @@
 :root {
-    --plum: #350023;
-    --plum-lighter: #4f1a3d;
-    --plum-lighter2: #683356;
-    --plum-lighter3: #824d70;
-    --plum-lighter4: #9b6689;
-    --plum-lighter5: #b47fa2;
-    --mauve: #987790;
-    --mauve-lighter: #b291aa;
-    --mauve-lighter2: #cbaac3;
-    --mauve-lighter3: #e5c4dd;
-    --mauve-lighter4: #feddf6;
-    --mauve-lighter5: #fff6ff;
-    --whitish: #f6f0f5;
-    --purple-white: #f2e8ef;
-    --very-light-purple: #efe3ec;
-    --purple-brown: #604b5a;
-    --dark-purple-brown: #5a4a55;
-    --purple-pink: #e099ce;
-    --light-purple: #d19cc3;
-    --mid-purple: #a15a8f;
-    --black: #191317;
-    --white: #ffffff;
-    --pink: #f7c6d5;
+	--plum: #350023;
+	--plum-lighter: #4f1a3d;
+	--plum-lighter2: #683356;
+	--plum-lighter3: #824d70;
+	--plum-lighter4: #9b6689;
+	--plum-lighter5: #b47fa2;
+	--mauve: #987790;
+	--mauve-lighter: #b291aa;
+	--mauve-lighter2: #cbaac3;
+	--mauve-lighter3: #e5c4dd;
+	--mauve-lighter4: #feddf6;
+	--mauve-lighter5: #fff6ff;
+	--whitish: #f6f0f5;
+	--purple-white: #f2e8ef;
+	--very-light-purple: #efe3ec;
+	--purple-brown: #604b5a;
+	--dark-purple-brown: #5a4a55;
+	--purple-pink: #e099ce;
+	--light-purple: #d19cc3;
+	--mid-purple: #a15a8f;
+	--black: #191317;
+	--white: #ffffff;
+	--pink: #f7c6d5;
 }
 
 #body-styles {
-    background-color: var(--very-light-purple);
-    font-family: "Montserrat", sans-serif;
-    color: var(--plum);
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    max-width: 123.75rem;
+	background-color: var(--very-light-purple);
+	font-family: "Montserrat", sans-serif;
+	color: var(--plum);
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	max-width: 123.75rem;
 	margin: 0 auto;
 }
 
 a,
-a:visited { 
+a:visited {
 	color: var(--purple-pink);
 	text-decoration: none;
 }
@@ -48,17 +48,17 @@ a:active {
 }
 
 h1,
-h2, 
+h2,
 h3 {
-    font-family: "Montserrat Alternates", sans-serif;
-    font-weight: 600;
-    padding-bottom: .25rem;
-    border-bottom: .15rem solid var(--plum-lighter5);
+	font-family: "Montserrat Alternates", sans-serif;
+	font-weight: 600;
+	padding-bottom: 0.25rem;
+	border-bottom: 0.15rem solid var(--plum-lighter5);
 }
 
 .filter-text h2 {
-    text-align: left;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.25rem;
-    border-bottom: none;
+	text-align: left;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.25rem;
+	border-bottom: none;
 }

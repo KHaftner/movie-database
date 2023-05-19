@@ -23,7 +23,6 @@ const MovieList = (props) => {
 			<section className="all-movies">
 				{props.movies.map((movie, index) => (
 					<div className="movie-container" key={movie.id}>
-						{/* <p>{JSON.stringify(movie)}</p> */}
 						<div className="hover-container">
 							<div className="movie-poster">
 								<img
@@ -44,7 +43,6 @@ const MovieList = (props) => {
 											</p>
 										</Link>
 									</div>
-									{/* toggle heart based on whether the movie is in favsArray*/}
 									<FavButton movie={movie} />
 								</div>
 							</div>
@@ -65,24 +63,30 @@ const MovieList = (props) => {
 							</p>
 							<p>
 								<strong>Original Language: </strong>
-								<em>{`${movie.original_language.toUpperCase().replace(/_/g, " ")}`}
+								<em>
+									{`${movie.original_language
+										.toUpperCase()
+										.replace(/_/g, " ")}`}
 								</em>
 							</p>
 							<p>
 								<span
-								className="rating"
-								style={{
+									className="rating"
+									style={{
 										backgroundColor:
-										movie.vote_average < 4
-											? "#fb7a7a"
-											: movie.vote_average < 6
-											? "#fab285"
-											: movie.vote_average < 7
-											? "#fff5a0"
-											: "#9aeaa0",
+											movie.vote_average < 4
+												? "#fb7a7a"
+												: movie.vote_average < 6
+												? "#fab285"
+												: movie.vote_average < 7
+												? "#fff5a0"
+												: "#9aeaa0",
 									}}
-									>
-									{Math.round((movie.vote_average / 10) * 100)}%
+								>
+									{Math.round(
+										(movie.vote_average / 10) * 100
+									)}
+									%
 								</span>
 							</p>
 						</div>

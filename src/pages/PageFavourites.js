@@ -13,14 +13,17 @@ import { FavListContext } from "../components/context/Context";
 const PageFavourites = () => {
 	document.title = `${appTitle} - Favourites`;
 	const [favList, setFavList] = useContext(FavListContext);
-	// console.log(FavouriteMovies);
+	// console.log({favList});
 
-	if (favList) {
+	if (favList && favList.length > 0) {
 		return (
 			<section className="movies-page">
 				<FavouritesLayout />
 				<div className="favourites-middle">
-					<p>This page is where all your <strong>favourite</strong> movies are stored!  &hearts;</p>
+					<p>
+						This page is where all your <strong>favourite</strong>{" "}
+						movies are stored! &hearts;
+					</p>
 					<p>Let's make some popcorn and watch an old fave!</p>
 				</div>
 				<div className="favourite-movie-container">
@@ -32,10 +35,14 @@ const PageFavourites = () => {
 		return (
 			<section className="movies-page">
 				<FavouritesLayout />
-				<p>
-					Sorry, no movies stored in your favourites! Let's make this
-					message better...
-				</p>
+				<div className="favourites-middle">
+					<p>
+						This page is where all your <strong>favourite</strong>{" "}
+						movies will be stored! &hearts;
+					</p>
+					<p>But... oh nooo, no favourites yet!</p>
+					<p>To a movie to this page, just click its heart icon.</p>
+				</div>
 			</section>
 		);
 	}

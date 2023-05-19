@@ -8,7 +8,11 @@ function Header() {
 		<header className="site-header">
 			<div className="logo-and-header">
 				<a href="/">
-					<img className="the-logo" src={logo} alt="Movie Love Logo - home page" />
+					<img
+						className="the-logo"
+						src={logo}
+						alt="Movie Love Logo - home page"
+					/>
 					<h1>Movie Love</h1>
 				</a>
 			</div>

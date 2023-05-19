@@ -3,14 +3,11 @@ import MenuButton from "../components/MenuButton";
 import { NavLink } from "react-router-dom";
 
 function NavMain() {
-
 	return (
 		<div>
-
 			<MenuButton />
-			
-			<nav className="site-navigation" id="site-navigation">
 
+			<nav className="site-navigation" id="site-navigation">
 				<ul className="nav-list" id="nav-list">
 					<li>
 						<NavLink to="/">Home</NavLink>

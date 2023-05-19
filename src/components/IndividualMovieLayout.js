@@ -5,16 +5,11 @@ import { appTitle } from "../globals/globalVariables";
 import MovieInfo from "./MovieInfo";
 
 const IndividualMovieLayout = ({ children }) => {
-
-  return (
-<header className="page-header" id="single-movie-header">
-    {/* <img
-		src={bannerImage}
-		alt="An image of a group of friends laughing and watching a movie"
-  /> */ }
-    {children}
-</header>
-  );
+	return (
+		<header className="page-header" id="single-movie-header">
+			{children}
+		</header>
+	);
 };
 
 export default IndividualMovieLayout;

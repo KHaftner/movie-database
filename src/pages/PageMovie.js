@@ -7,11 +7,10 @@ import MovieInfo from "../components/MovieInfo";
 
 const PageMovie = () => {
 	let { id } = useParams();
-	document.title = `${appTitle} - ${id.title}`; 
+	document.title = `${appTitle} - ${id.title}`;
 	const [movie, setMovie] = useState();
 
 	const getUsTheMovie = async () => {
-
 		const idSelected = `https://api.themoviedb.org/3/movie/${id}?api_key=cc622192f2417beca927f1e14b1278dd&language=en-US`;
 
 		const movieResponse = await fetch(idSelected);
@@ -24,8 +23,8 @@ const PageMovie = () => {
 	useEffect(() => {
 		getUsTheMovie();
 	}, [id]);
-// 
-	if(movie){
+	//
+	if (movie) {
 		return (
 			<section className="single-movie-page">
 				<IndividualMovieLayout />
@@ -39,6 +38,5 @@ const PageMovie = () => {
 			</section>
 		);
 	}
-
 };
 export default PageMovie;

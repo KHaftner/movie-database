@@ -1,32 +1,30 @@
 footer {
-    background-color: var(--plum);
-    color: var(--white);
-    box-shadow: 0 -0.25rem 0.125rem -0.125rem #808080c9;
-    padding: 1rem;
-    position: relative;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 7;
+	background-color: var(--plum);
+	color: var(--white);
+	box-shadow: 0 -0.25rem 0.125rem -0.125rem #808080c9;
+	padding: 1rem;
+	position: relative;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 7;
 }
 
 footer span {
-    font-size: 1rem;
-    font-weight: 600;
-    padding-bottom: .25rem;
-    letter-spacing: .15rem;
-
+	font-size: 1rem;
+	font-weight: 600;
+	padding-bottom: 0.25rem;
+	letter-spacing: 0.15rem;
 }
 
 footer p {
-    font-size: .9rem;
-    text-shadow: .15rem .15rem 0rem var(--black);
-    text-align: center;
+	font-size: 0.9rem;
+	text-shadow: 0.15rem 0.15rem 0rem var(--black);
+	text-align: center;
 }
 
-
 @media (min-width: 25rem) {
-    footer span {
-        border-bottom: .1rem solid var(--mauve-lighter3);
-    }
+	footer span {
+		border-bottom: 0.1rem solid var(--mauve-lighter3);
+	}
 }

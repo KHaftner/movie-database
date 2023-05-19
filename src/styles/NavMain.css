@@ -1,23 +1,23 @@
 nav ul {
-    padding: 0 1rem;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
+	padding: 0 1rem;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
 }
 
 nav li {
-    padding: 1rem;
+	padding: 1rem;
 }
 
 nav a,
 nav a:visited {
-    font-weight: 600;
-    color: var(--purple-white);
-    letter-spacing: .15rem;
-    transition: .5s ease-out;
+	font-weight: 600;
+	color: var(--purple-white);
+	letter-spacing: 0.15rem;
+	transition: 0.5s ease-out;
 }
 
 .site-header nav a:hover {
-    color: var(--mauve-lighter3);
-    border-bottom: .05rem solid var(--white);
+	color: var(--mauve-lighter3);
+	border-bottom: 0.05rem solid var(--white);
 }

@@ -1,47 +1,47 @@
 .site-header {
-    max-width: 123.75rem;
-    margin: 0 auto;
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--plum);
-    color: var(--white);
-    box-shadow: 0 0.25rem 0.125rem -0.125rem #808080c9;
+	max-width: 123.75rem;
+	margin: 0 auto;
+	position: fixed;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: var(--plum);
+	color: var(--white);
+	box-shadow: 0 0.25rem 0.125rem -0.125rem #808080c9;
 }
 
 .logo-and-header {
-    padding-left: 1rem;
-    display: flex;
-    align-items: center;
-    /* Logo looks kinda pixely, fix this somehow. */
+	padding-left: 1rem;
+	display: flex;
+	align-items: center;
+	/* Logo looks kinda pixely, fix this somehow. */
 }
 
 .logo-and-header .the-logo {
-    display: none;
+	display: none;
 }
 
 .hamburger-menu {
 	border: none;
 	background: none;
 	position: relative;
-    z-index: 9999;
+	z-index: 9999;
 	width: 2rem;
 	height: 100%;
 	cursor: pointer;
 }
 
 .bar {
-    position: absolute;
-    background: var(--text-color);
-    width: 2rem;
-    height: 0.3125rem;
-    content: "";
-    display: block;
+	position: absolute;
+	background: var(--text-color);
+	width: 2rem;
+	height: 0.3125rem;
+	content: "";
+	display: block;
 	width: 100%;
 	top: 50%;
 	right: 0;
@@ -50,44 +50,46 @@
 }
 
 .bar::before {
-    position: absolute;
-    background: var(--text-color);
-    width: 2rem;
-    height: 0.3125rem;
-    content: "";
-    display: block;
-	top: .5rem;
+	position: absolute;
+	background: var(--text-color);
+	width: 2rem;
+	height: 0.3125rem;
+	content: "";
+	display: block;
+	top: 0.5rem;
 }
 
 .bar::after {
-    position: absolute;
-    background: var(--text-color);
-    width: 2rem;
-    height: 0.3125rem;
-    content: "";
-    display: block;
-	bottom: .5rem;
+	position: absolute;
+	background: var(--text-color);
+	width: 2rem;
+	height: 0.3125rem;
+	content: "";
+	display: block;
+	bottom: 0.5rem;
 }
 
-.bar::after, .bar::before, .bar {
-	transition: all .3s ease-in-out;
-	-webkit-transition: all .3s ease-in-out;
+.bar::after,
+.bar::before,
+.bar {
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
 }
 
 .hamburger-menu.menu-on .bar::after {
 	transform: rotate(-45deg);
-	 -webkit-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
 	bottom: 0;
 }
 
 .hamburger-menu.menu-on .bar::before {
 	transform: rotate(45deg);
-	 -webkit-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
 	top: 0;
 }
 
 .hamburger-menu.menu-on .bar {
-   background: rgba(111,111,111,.0);
+	background: rgba(111, 111, 111, 0);
 }
 
 #site-navigation {
@@ -99,7 +101,7 @@
 }
 
 #site-navigation.toggled {
-	display: block; 
+	display: block;
 	position: absolute;
 	text-align: center;
 	top: 1.5rem;
@@ -109,25 +111,24 @@
 	margin: 0;
 	transform: translateY(4.5rem);
 	background-color: whitesmoke;
-} 
+}
 
 @media (min-width: 48.4375em) {
+	.logo-and-header .the-logo {
+		display: block;
+	}
 
-    .logo-and-header .the-logo {
-        display: block;
-    }
-
-    .logo-and-header {
-        padding-left: 0;
-    }
+	.logo-and-header {
+		padding-left: 0;
+	}
 
 	.hamburger-menu {
 		display: none;
 	}
 
 	#site-navigation {
-        display: block;
-    }	
+		display: block;
+	}
 
 	#site-navigation ul,
 	#site-navigation.toggled ul {
@@ -136,26 +137,26 @@
 }
 
 .logo-and-header a {
-    display: flex;
-    color: var(--white);
-    transition: .3s ease;
+	display: flex;
+	color: var(--white);
+	transition: 0.3s ease;
 }
 
 .logo-and-header a:hover {
-    color: var(--mauve-lighter4);
+	color: var(--mauve-lighter4);
 }
 
 .site-header img {
-    display: inline-block;
-    padding: 1rem;
-    width: 4.25rem;
-    height: 4.25rem;
+	display: inline-block;
+	padding: 1rem;
+	width: 4.25rem;
+	height: 4.25rem;
 }
 
 .site-header h1 {
-    display: inline-block;
-    font-size: 2rem;
-    font-weight: 800;
-    text-shadow: .25rem .25rem 0rem var(--black);
-    padding-bottom: .25rem;
+	display: inline-block;
+	font-size: 2rem;
+	font-weight: 800;
+	text-shadow: 0.25rem 0.25rem 0rem var(--black);
+	padding-bottom: 0.25rem;
 }
