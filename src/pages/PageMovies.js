@@ -34,7 +34,8 @@ const PageMovies = () => {
       <HomeLayout />
 	  <NavSort handleCategoryChange={handleCategoryChange} selectedCategory={category} />
       <div className="filter-text">
-        <h2>{`${category.toUpperCase().replace(/_/g, " ")}`}</h2>
+			<h2 class="mobile-sort">Sort the movies to your heart's content!</h2>
+        	<h2 class="desktop-sort">{`${category.toUpperCase().replace(/_/g, " ")}`}</h2>
         <p>
           <em>
             Scroll right to view all of the movies in the{" "}

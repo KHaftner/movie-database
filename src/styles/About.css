@@ -22,15 +22,10 @@
     text-align: center;
 }
 
-#about-header {
-    overflow: hidden;
-}
-
 #about-header img {
     filter: opacity(.2);
     position: relative;
-    margin-top: 2rem;
-    margin-bottom: -6rem;
+    top: 5rem;
 }
 
 .about p {
@@ -48,4 +43,12 @@
 
 .about {
     position: sticky;
+    margin-bottom: 1rem;
+}
+
+.about .cartoon-heart {
+    position: absolute;
+    top: 20rem;
+    right: 5rem;
+    z-index: 10;
 }

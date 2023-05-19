@@ -1,8 +1,8 @@
 .site-header {
-    max-width: 120rem;
+    max-width: 123.75rem;
     margin: 0 auto;
     position: fixed;
-    z-index: 9999;
+    z-index: 999;
     top: 0;
     left: 0;
     right: 0;
@@ -15,19 +15,145 @@
 }
 
 .logo-and-header {
+    padding-left: 1rem;
     display: flex;
     align-items: center;
     /* Logo looks kinda pixely, fix this somehow. */
 }
 
-.site-header img {
+.logo-and-header .the-logo {
+    display: none;
+}
+
+.hamburger-menu {
+	border: none;
+	background: none;
+	position: relative;
+    z-index: 9999;
+	width: 2rem;
+	height: 100%;
+	cursor: pointer;
+}
+
+.bar {
+    position: absolute;
+    background: var(--text-color);
+    width: 2rem;
+    height: 0.3125rem;
+    content: "";
     display: block;
+	width: 100%;
+	top: 50%;
+	right: 0;
+	margin-top: -0.3125rem;
+	opacity: 1;
+}
+
+.bar::before {
+    position: absolute;
+    background: var(--text-color);
+    width: 2rem;
+    height: 0.3125rem;
+    content: "";
+    display: block;
+	top: .5rem;
+}
+
+.bar::after {
+    position: absolute;
+    background: var(--text-color);
+    width: 2rem;
+    height: 0.3125rem;
+    content: "";
+    display: block;
+	bottom: .5rem;
+}
+
+.bar::after, .bar::before, .bar {
+	transition: all .3s ease-in-out;
+	-webkit-transition: all .3s ease-in-out;
+}
+
+.hamburger-menu.menu-on .bar::after {
+	transform: rotate(-45deg);
+	 -webkit-transform: rotate(-45deg);
+	bottom: 0;
+}
+
+.hamburger-menu.menu-on .bar::before {
+	transform: rotate(45deg);
+	 -webkit-transform: rotate(45deg);
+	top: 0;
+}
+
+.hamburger-menu.menu-on .bar {
+   background: rgba(111,111,111,.0);
+}
+
+#site-navigation {
+	display: none;
+}
+
+#site-navigation li {
+	list-style: none;
+}
+
+#site-navigation.toggled {
+	display: block; 
+	position: absolute;
+	text-align: center;
+	top: 1.5rem;
+	right: 0;
+	height: auto;
+	width: 100%;
+	margin: 0;
+	transform: translateY(4.5rem);
+	background-color: whitesmoke;
+} 
+
+@media (min-width: 48.4375em) {
+
+    .logo-and-header .the-logo {
+        display: block;
+    }
+
+    .logo-and-header {
+        padding-left: 0;
+    }
+
+	.hamburger-menu {
+		display: none;
+	}
+
+	#site-navigation {
+        display: block;
+    }	
+
+	#site-navigation ul,
+	#site-navigation.toggled ul {
+		display: flex;
+	}
+}
+
+.logo-and-header a {
+    display: flex;
+    color: var(--white);
+    transition: .3s ease;
+}
+
+.logo-and-header a:hover {
+    color: var(--mauve-lighter4);
+}
+
+.site-header img {
+    display: inline-block;
     padding: 1rem;
-    width: 3rem;
-    height: 3rem;
+    width: 4.25rem;
+    height: 4.25rem;
 }
 
 .site-header h1 {
+    display: inline-block;
     font-size: 2rem;
     font-weight: 800;
     text-shadow: .25rem .25rem 0rem var(--black);

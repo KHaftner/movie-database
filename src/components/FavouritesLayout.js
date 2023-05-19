@@ -17,4 +17,4 @@ const FavouritesLayout = ({ children }) => {
   );
 };
 
-export default FavouritesLayout; 
+export default FavouritesLayout;

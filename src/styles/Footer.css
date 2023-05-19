@@ -15,10 +15,18 @@ footer span {
     font-weight: 600;
     padding-bottom: .25rem;
     letter-spacing: .15rem;
-    border-bottom: .1rem solid var(--mauve-lighter3);
+
 }
+
 footer p {
     font-size: .9rem;
     text-shadow: .15rem .15rem 0rem var(--black);
     text-align: center;
+}
+
+
+@media (min-width: 25rem) {
+    footer span {
+        border-bottom: .1rem solid var(--mauve-lighter3);
+    }
 }
