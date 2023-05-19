@@ -1,0 +1,75 @@
+.single-movie-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+.hero-background {
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 123.75rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.33;
+    z-index: -1;
+
+}
+
+.movie-flex-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 15rem;
+    left: 2rem;
+    margin-bottom: 20rem;
+}
+  
+.poster-image {
+    position: sticky;
+    opacity: 1;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.3rem 0rem #00000097;
+    transition: filter ease-out .5s;
+}
+
+.poster-image:hover {
+    filter: sepia(.75);
+}
+
+.movie-title-box {
+    position: relative;
+    opacity: 1;
+    z-index: 2;
+}
+
+.single-movie-title-box span {
+    font-size: 3.5rem;
+}
+
+.movie-details {
+    position: relative;
+    left: 2rem;
+}
+
+.movie-details-container {
+    margin-top: 2rem;
+    margin-left: .25rem;
+    max-width: 50rem;
+    background-color: #f8e9f5b2;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem 0.3rem 0rem #00000050;
+}
+
+.movie-details-container p {
+    font-size: 1.1rem;
+}
+
+@media (max-width: 25.625em) {
+    .poster-image {
+        width: 12.5rem;
+    }
+}
