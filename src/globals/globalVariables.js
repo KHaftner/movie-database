@@ -4,7 +4,7 @@ export const API_TOKEN = 'eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjYzYyMjE5MmYyNDE3YmVjY
 export const APP_FOLDER_NAME = 'movie-database';
 export const BASE_URL_POSTER = 'https://image.tmdb.org/t/p/w154/';
 export const BASE_URL_ORIGINAL_SIZE = 'https://image.tmdb.org/t/p/original/';
-export const BASE_URL_INDIVIDUAL_SIZE = 'https://image.tmdb.org/t/p/w342/';
+export const BASE_URL_INDIVIDUAL_SIZE = 'https://image.tmdb.org/t/p/w500/';
 export const API_CONFIG = 'https://api.themoviedb.org/3/configuration?api_key=cc622192f2417beca927f1e14b1278dd';
 
 { /* Example API Request: https://api.themoviedb.org/3/movie/550?api_key=cc622192f2417beca927f1e14b1278dd

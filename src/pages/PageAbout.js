@@ -1,6 +1,7 @@
 import { appTitle } from "../globals/globalVariables";
 import AboutLayout from "../components/AboutLayout";
 import tmdbLogo from "../images/tmdb-logo.png";
+import undrawHeart from "../images/undraw-heart.svg";
 
 const PageAbout = () => {
 	document.title = `${appTitle} - About`;
@@ -14,6 +15,7 @@ const PageAbout = () => {
 				<p><em><strong>Please Note</strong></em>: This product uses the TMBb API, but it is not endorsed or certified by TMDb.</p>
 					<img src={tmdbLogo} alt="TMDB's Logo" className="tmdb-logo" />
 			</div>
+			<img src={undrawHeart} alt="A cartoon image of a girl holding a heart" className="cartoon-heart" />
 		</section>
 	);
 };

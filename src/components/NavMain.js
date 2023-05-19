@@ -1,12 +1,17 @@
 import "../styles/NavMain.css";
-
+import MenuButton from "../components/MenuButton";
 import { NavLink } from "react-router-dom";
 
 function NavMain() {
+
 	return (
 		<div>
-			<nav>
-				<ul>
+
+			<MenuButton />
+			
+			<nav className="site-navigation" id="site-navigation">
+
+				<ul className="nav-list" id="nav-list">
 					<li>
 						<NavLink to="/">Home</NavLink>
 					</li>
@@ -15,9 +20,6 @@ function NavMain() {
 					</li>
 					<li>
 						<NavLink to="/favs">Favourites</NavLink>
-					</li>
-					<li>
-						<NavLink to="/contact">Contact</NavLink>
 					</li>
 				</ul>
 			</nav>

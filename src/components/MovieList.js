@@ -59,13 +59,31 @@ const MovieList = (props) => {
 								</p>
 							</div>
 							<p>
-								Release Date:
+								<strong>Release Date:</strong>
 								<br />
 								<em>{movie.release_date}</em>
 							</p>
 							<p>
-								Average Rating:{" "}
-								<strong>{movie.vote_average}</strong>
+								<strong>Original Language: </strong>
+								<em>{`${movie.original_language.toUpperCase().replace(/_/g, " ")}`}
+								</em>
+							</p>
+							<p>
+								<span
+								className="rating"
+								style={{
+										backgroundColor:
+										movie.vote_average < 4
+											? "#fb7a7a"
+											: movie.vote_average < 6
+											? "#fab285"
+											: movie.vote_average < 7
+											? "#fff5a0"
+											: "#9aeaa0",
+									}}
+									>
+									{Math.round((movie.vote_average / 10) * 100)}%
+								</span>
 							</p>
 						</div>
 					</div>

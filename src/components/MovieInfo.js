@@ -40,20 +40,36 @@ const MovieInfo = (props) => {
               <div className="single-movie-title-box">
                 <p><span><strong>{movie.title}</strong></span></p>
               </div> 
+
               <div className="movie-details-container">
-                <p><strong>Status</strong>: {movie.status}</p>
-                <p><strong>Release Date</strong>:<br /><em>{movie.release_date}</em></p>
+                
+                <div className="favourite-single-movie">
+                  <p>Add to your favourites?</p>
+                  <FavButton movie={movie} />
+                </div>
+                <p><strong>Status:</strong> {movie.status}</p>
+                <p><strong>Release Date:</strong><br /><em>{movie.release_date}</em></p>
                 <p>
-                <strong>Average Rating</strong>:{" "}
-                  {movie.vote_average}
-						    </p>
-                <p><strong>Overview</strong>: {movie.overview}</p>
-                <p><strong>Budget</strong>: ${movie.budget}</p>
-                <p><strong>Revenue</strong>: ${movie.revenue}</p>
+                  <span className="rating-movie"
+                        style={{
+                          backgroundColor:
+                          movie.vote_average < 4
+                            ? "#fb7a7a"
+                            : movie.vote_average < 6
+                            ? "#fab285"
+                            : movie.vote_average < 7
+                            ? "#fff5a0"
+                            : "#9aeaa0",
+                        }}>
+                        { Math.round((movie.vote_average / 10) * 100) } %</span>
+							  </p>
+                <p><strong>Overview:</strong> {movie.overview}</p>
+                <p><strong>Budget:</strong> ${movie.budget}</p>
+                <p><strong>Revenue:</strong> ${movie.revenue}</p>
                 <p>
-							    <strong>Genres</strong>: <ul>{thisMovieGenres}</ul>
+							    <strong>Genres:</strong> <ul>{thisMovieGenres}</ul>
 						    </p>
-                <p><strong>Runtime</strong>: {movie.runtime} minutes</p>
+                <p><strong>Runtime:</strong> {movie.runtime} minutes</p>
               </div>
             </div>
           </div>

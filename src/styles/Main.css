@@ -1,32 +1,10 @@
-/* #main-content {
-    position: sticky;
-    margin-top: -27.5rem;
-    margin-bottom: -1rem; 
-} */
-
-.page-content {
-    background-color: var(--very-light-purple);
+#main-content {
+    margin: 0 auto;
+    max-width: 123.75rem;
 }
 
-.filter-text {
-    background-color: #350023e7;
-    position: relative;
-    z-index: 6;
-    color: var(--purple-white);
-    padding: 1rem 0;
-}
-
-.h2-container {
-    position: sticky;
-    right: 0;
-    top: 25rem;
-    padding: .75rem 0;
-    background-color: #f2e8efb3;
-    z-index: 2;
-}
-
-.page-header img {
-    top: -5rem;
+.page-header {
+    overflow: hidden;
 }
 
 .page-header h2 {
@@ -35,8 +13,113 @@
     color: var(--plum);
     letter-spacing: .25rem;
     padding: 0 1rem .05rem;
-    text-align: right;
-    font-size: 2.5rem;
+    text-align: center;
     padding-bottom: .25rem;
     z-index: 3;
+    font-size: clamp(1.5rem, 2.75vw, 2.75rem);
+}
+
+.page-content {
+    background-color: var(--very-light-purple);
+}
+
+.filter-text {
+    background-color: #350023e7;
+    position: relative;
+    top: -20rem;
+    z-index: 8;
+    color: var(--purple-white);
+    padding: .5rem 1rem;
+}
+
+.filter-text h2 {
+    text-align: center;
+    margin-top: .25rem;
+    font-size: .8rem;
+}
+
+.filter-text p {
+    display: none;
+}
+
+.home-page {
+    margin: 0 auto;
+    max-width: 123.75rem;
+}
+
+.h2-container {
+    position: relative;
+    right: 0;
+    top: 13rem;
+    padding: .75rem 0;
+    background-color: #f2e8efb3;
+    z-index: 10;
+}
+
+.page-header {
+    max-width: 123.75rem;
+    margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.page-header img {
+    display: block;
+    max-width: none;
+    margin-top: -8rem;
+    position: relative;
+    top: -4rem;
+    left: -34rem;
+}
+
+h2.desktop-sort {
+    display: none;
+}
+
+@media (min-width: 75em) {
+
+    .page-header img {
+        width: 123.75rem;
+        top: 4rem;
+        left: 0;
+    }
+
+    .h2-container {
+        top: 30rem;
+    }
+
+    .page-header h2 {
+        text-align: right;
+    }
+
+    .filter-nav ul {
+        top: -16.25rem;
+    }
+
+    .filter-text {
+        display: block;
+        top: -16.5rem;
+    }
+
+    .filter-text p {
+        display: block;
+    }
+
+    h2.mobile-sort {
+        display: none;
+    }
+
+    h2.desktop-sort {
+        display: block;
+        font-size: 1.25rem;
+        font-family: "Montserrat", sans-serif;
+        text-align: left;
+        padding-top: 1rem;
+    }
+
+}
+
+@media (min-width: 87.5em) {
+    .h2-container {
+        top: 30.1rem;
+    }
 }

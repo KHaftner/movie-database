@@ -1,6 +1,5 @@
 #favourites-header img {
     position: relative;
-    top: -10rem;
     filter: opacity(.75);
 }
 
@@ -18,14 +17,30 @@
 }
 
 #favourites-header {
-    margin-bottom: 20rem;
+    margin-bottom: 10rem;
 }
 
 .favourites-movie-container {
     background-color: var(--plum-lighter3);
 }
 
-.favourite-movie-container .movie-container {
-    display: block;
-    max-width: 10rem;
+@media (min-width: 75em) {
+    .favourite-movie-container .movie-container {
+        display: block;
+        max-width: 12.75rem;
+    }
+    
+    .favourites .hover-container {
+        max-width: 12.75rem;
+    }
+}
+
+.favourites-middle {
+    color: var(--white);
+    position: relative;
+    top: -18rem;
+    padding: 1rem;
+    z-index: 99;
+    background-color: var(--plum);
+    text-align: center;
 }

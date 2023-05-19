@@ -8,9 +8,9 @@ function Header() {
 		<header className="site-header">
 			<div className="logo-and-header">
 				<a href="/">
-					<img src={logo} alt="Movie Love Logo - home page" />
+					<img className="the-logo" src={logo} alt="Movie Love Logo - home page" />
+					<h1>Movie Love</h1>
 				</a>
-				<h1>Movie Love</h1>
 			</div>
 			<NavMain />
 		</header>

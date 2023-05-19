@@ -24,14 +24,14 @@
     --pink: #f7c6d5;
 }
 
-body {
+#body-styles {
     background-color: var(--very-light-purple);
     font-family: "Montserrat", sans-serif;
     color: var(--plum);
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5rem;
-    max-width: 120rem;
+    max-width: 123.75rem;
 	margin: 0 auto;
 }
 
@@ -61,18 +61,4 @@ h3 {
     font-family: "Montserrat", sans-serif;
     font-size: 1.25rem;
     border-bottom: none;
-}
-
-.page-header {
-    max-width: 120rem;
-    margin: 0 auto;
-    overflow-x: hidden;
-}
-
-.page-header img {
-    position: relative;
-    top: -4rem;
-    left: 0;
-    right: 0;
-    size: cover;
 }
