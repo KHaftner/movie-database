@@ -17,10 +17,3 @@ function EmptyHeartIcon(props) {
 }
 
 export default EmptyHeartIcon;
-
-{
-	/* Example of how to use this component: 
-        import EmptyHeartIcon from "../components/FilledHeartIcon";    
-		<EmptyHeartIcon className="to give it a fill colour" width="__px" height="__px" />
-    */
-}

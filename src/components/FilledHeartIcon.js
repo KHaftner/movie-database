@@ -18,9 +18,3 @@ function FilledHeartIcon(props) {
 
 export default FilledHeartIcon;
 
-{
-	/* Example of how to use this component: 
-        import FilledHeartIcon from "../components/FilledHeartIcon";    
-		<FilledHeartIcon className="to give it a fill colour" width="__px" height="__px" />
-    */
-}

@@ -29,24 +29,3 @@ const MenuButton = () => {
 };
 
 export default MenuButton;
-
-{
-	/*
-
-	const btnMenu = document.getElementById('btn-menu');
-	const bar = document.getElementById('bar');
-	const nav = document.getElementById('site-navigation');
-
-	btnMenu.addEventListener('click', openMenu);
-
-	btnMenu.addEventListener('mousedown', function (e) {
-  	e.preventDefault();
-	});
-
-	function openMenu() {
- 	btnMenu.classList.toggle('menu-on');
-  	nav.classList.toggle('toggled');
-	}
-
-*/
-}

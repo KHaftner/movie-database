@@ -23,7 +23,6 @@ const MovieList = (props) => {
 			<section className="all-movies">
 				{props.movies.map((movie, index) => (
 					<div className="movie-container" key={movie.id}>
-						{/* <p>{JSON.stringify(movie)}</p> */}
 						<div className="hover-container">
 							<div className="movie-poster">
 								<img
@@ -44,7 +43,6 @@ const MovieList = (props) => {
 											</p>
 										</Link>
 									</div>
-									{/* toggle heart based on whether the movie is in favsArray*/}
 									<FavButton movie={movie} />
 								</div>
 							</div>

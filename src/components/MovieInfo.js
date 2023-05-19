@@ -9,18 +9,15 @@ const MovieInfo = (props) => {
 	const { movie } = props;
 	// for each item (object) in array genreArray do object stuff
 	const genreArray = movie.genres;
-	// console.dir(movie);
 	let movieGenres = [];
 	let thisMovieGenres = [];
 	for (let index = 0; index < genreArray.length; index++) {
 		const movieGenre = genreArray[index];
-		// console.log(movieGenre.name);
 		movieGenres.push(movieGenre.name);
 		thisMovieGenres = movieGenres.map((oneGenre) => (
 			<li key={oneGenre}>{oneGenre}</li>
 		));
 	}
-	// console.log(movieGenres);
 
 	const heroBackgroundStyle = {
 		backgroundImage: `url(${BASE_URL_ORIGINAL_SIZE}${movie.poster_path})`,
