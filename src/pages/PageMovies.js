@@ -34,11 +34,11 @@ const PageMovies = () => {
       <HomeLayout />
 	  <NavSort handleCategoryChange={handleCategoryChange} selectedCategory={category} />
       <div className="filter-text">
-        <h2>{`${filter.toUpperCase().replace(/_/g, " ")}`}</h2>
+        <h2>{`${category.toUpperCase().replace(/_/g, " ")}`}</h2>
         <p>
           <em>
             Scroll right to view all of the movies in the{" "}
-            <strong>{`${filter.replace(/_/g, " ")}`}</strong> section.
+            <strong>{`${category.replace(/_/g, " ")}`}</strong> section.
           </em>
         </p>
       </div>

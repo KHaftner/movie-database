@@ -8,7 +8,7 @@ import MovieInfo from "../components/MovieInfo";
 const PageMovie = () => {
 	let { id } = useParams();
 	document.title = `${appTitle} - ${id.title}`; 
-	const [movie, setMovie] = useState([]);
+	const [movie, setMovie] = useState();
 
 	const getUsTheMovie = async () => {
 
@@ -24,12 +24,21 @@ const PageMovie = () => {
 	useEffect(() => {
 		getUsTheMovie();
 	}, [id]);
+// 
+	if(movie){
+		return (
+			<section className="single-movie-page">
+				<IndividualMovieLayout />
+				<MovieInfo movie={movie} />
+			</section>
+		);
+	} else {
+		return (
+			<section className="single-movie-page">
+				<p>Loading...</p>
+			</section>
+		);
+	}
 
-	return (
-		<section className="single-movie-page">
-			<IndividualMovieLayout />
-			<MovieInfo movie={movie} />
-		</section>
-	);
 };
 export default PageMovie;
