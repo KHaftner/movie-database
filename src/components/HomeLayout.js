@@ -1,5 +1,6 @@
 import React from "react";
 import bannerImage from "../images/banner-image.jpg";
+import "../styles/Home.css";
 
 const HomeLayout = ({ children }) => {
 	return (
