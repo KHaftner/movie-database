@@ -19,3 +19,7 @@
 .fav-toggle:hover {
 	cursor: pointer;
 }
+
+.hover-container .favButton {
+	margin: -0.5rem;
+}
