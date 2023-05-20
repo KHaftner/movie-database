@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import { appTitle } from "../globals/globalVariables";
 import IndividualMovieLayout from "../components/IndividualMovieLayout";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import MovieInfo from "../components/MovieInfo";
 

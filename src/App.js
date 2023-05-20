@@ -3,19 +3,13 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import NavMain from "./components/NavMain";
-import NavSort from "./components/NavSort";
-import HomeLayout from "./components/HomeLayout";
 import PageAbout from "./pages/PageAbout";
-import PageContact from "./pages/PageContact";
 import PageFavourites from "./pages/PageFavourites";
 import PageHome from "./pages/PageHome";
 import PageMovie from "./pages/PageMovie";
 import PageMovies from "./pages/PageMovies";
 import PageNotFound from "./pages/PageNotFound";
-import MovieList from "./components/MovieList";
 import React, { useEffect, useState } from "react";
-import bannerImage from "./images/banner-image.jpg";
 import { FavListContext } from "./components/context/Context";
 
 function App() {
@@ -33,7 +27,6 @@ function App() {
 					<Routes>
 						<Route path="/" element={<PageHome />} />
 						<Route path="/about" element={<PageAbout />} />
-						<Route path="/contact" element={<PageContact />} />
 						<Route path="/favs" element={<PageFavourites />} />
 						<Route path="/movie/:id" element={<PageMovie />} />
 						<Route
