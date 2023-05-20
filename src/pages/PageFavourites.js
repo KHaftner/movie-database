@@ -41,7 +41,7 @@ const PageFavourites = () => {
 						movies will be stored! &hearts;
 					</p>
 					<p>But... oh nooo, no favourites yet!</p>
-					<p>To a movie to this page, just click its heart icon.</p>
+					<p>To add a movie to this page, just click its heart icon.</p>
 				</div>
 			</section>
 		);
