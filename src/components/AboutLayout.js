@@ -1,5 +1,4 @@
 import React from "react";
-import bannerImage5 from "../images/banner-image-5.jpg";
 import "../styles/About.css";
 
 const AboutLayout = ({ children }) => {

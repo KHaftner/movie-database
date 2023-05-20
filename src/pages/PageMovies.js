@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { appTitle } from "../globals/globalVariables";
 import MovieList from "../components/MovieList";
 import "../styles/MovieList.css";
-import FavButton from "../components/FavButton";
 import HomeLayout from "../components/HomeLayout";
 import NavSort from "../components/NavSort";
 

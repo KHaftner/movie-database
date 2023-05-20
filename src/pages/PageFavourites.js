@@ -1,12 +1,10 @@
 // this is where movies from local storage will be displayed
 // it will follow the structure of PageMovies.js except with no filterChoice
 
-import { useParams } from "react-router-dom";
 import { appTitle } from "../globals/globalVariables";
 import React, { useEffect, useState, useContext } from "react";
 import MovieList from "../components/MovieList";
 import "../styles/MovieList.css";
-import FavButton from "../components/FavButton";
 import FavouritesLayout from "../components/FavouritesLayout";
 import { FavListContext } from "../components/context/Context";
 
