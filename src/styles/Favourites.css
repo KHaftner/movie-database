@@ -67,3 +67,10 @@
 	}
 
 }
+
+@media (max-width: 40.625em) {
+
+	#favourites-header {
+		margin-top: 5rem;
+	}
+}

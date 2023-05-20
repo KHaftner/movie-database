@@ -23,7 +23,7 @@ footer p {
 	text-align: center;
 }
 
-@media (min-width: 25rem) {
+@media (min-width: 25em) {
 	footer span {
 		border-bottom: 0.1rem solid var(--mauve-lighter3);
 	}
