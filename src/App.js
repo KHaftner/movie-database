@@ -2,7 +2,6 @@ import "./styles/NormalizeFWD.css";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Main from "./components/Main";
 import Footer from "./components/Footer";
 import NavMain from "./components/NavMain";
 import NavSort from "./components/NavSort";

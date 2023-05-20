@@ -26,8 +26,8 @@
 .filter-text {
 	background-color: #350023e7;
 	position: relative;
-	top: -20rem;
-	z-index: 8;
+	top: -10rem;
+	z-index: 3;
 	color: var(--purple-white);
 	padding: 0.5rem 1rem;
 }
@@ -36,6 +36,7 @@
 	text-align: center;
 	margin-top: 0.25rem;
 	font-size: 0.8rem;
+	border-bottom: none;
 }
 
 .filter-text p {
@@ -50,10 +51,10 @@
 .h2-container {
 	position: relative;
 	right: 0;
-	top: 13rem;
+	top: 18rem;
 	padding: 0.75rem 0;
 	background-color: #f2e8efb3;
-	z-index: 10;
+	z-index: 4;
 }
 
 .page-header {
@@ -66,9 +67,10 @@
 	display: block;
 	max-width: none;
 	margin-top: -8rem;
+	margin-bottom: -8rem;
 	position: relative;
-	top: -4rem;
 	left: -34rem;
+	z-index: 1
 }
 
 h2.desktop-sort {
@@ -80,27 +82,29 @@ h2.desktop-sort {
 		width: 123.75rem;
 		top: 4rem;
 		left: 0;
+		margin-bottom: -4rem;
 	}
 
 	.h2-container {
-		top: 30rem;
+		top: 29rem;
 	}
 
 	.page-header h2 {
 		text-align: right;
 	}
 
-	.filter-nav ul {
-		top: -16.25rem;
-	}
-
 	.filter-text {
 		display: block;
-		top: -16.5rem;
+		top: -13.45rem;
 	}
 
 	.filter-text p {
 		display: block;
+	}
+
+	.filter-text h2 {
+		text-align: left;
+		font-size: 1.25rem;
 	}
 
 	h2.mobile-sort {
@@ -116,8 +120,8 @@ h2.desktop-sort {
 	}
 }
 
-@media (min-width: 87.5em) {
+@media (min-width: 84.375rem) {
 	.h2-container {
-		top: 30.1rem;
+		top: 29.1rem;
 	}
 }
