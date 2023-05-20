@@ -26,10 +26,10 @@
 .filter-text {
 	background-color: #350023e7;
 	position: relative;
-	top: -10rem;
+	top: -10.25rem;
 	z-index: 3;
 	color: var(--purple-white);
-	padding: 0.5rem 1rem;
+	padding: .6rem;
 }
 
 .filter-text h2 {
@@ -120,7 +120,7 @@ h2.desktop-sort {
 	}
 }
 
-@media (min-width: 84.375rem) {
+@media (min-width: 84.375em) {
 	.h2-container {
 		top: 29.1rem;
 	}

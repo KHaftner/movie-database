@@ -21,7 +21,7 @@
 .about-text-container {
 	background-color: #fff6ffa2;
 	margin: 2rem .5rem;
-	padding: .5rem;
+	padding: .75rem;
 	border-radius: 1rem;
 	max-width: 40rem;
 }
@@ -46,7 +46,7 @@
 	display: none;
 }
 
-@media (min-width: 40.625rem) {
+@media (min-width: 40.625em) {
 	.about-wrapper {
 		padding-top: 2rem;
 	}
@@ -56,7 +56,7 @@
 	}
 }
 
-@media (min-width: 100rem) {
+@media (min-width: 100em) {
 	.about-wrapper {
 		padding-bottom: 6rem;
 	}
@@ -64,6 +64,13 @@
 	.about .cartoon-heart {
 		display: block;
 		z-index: 1
+	}
+}
+
+@media (max-width: 40.625em) {
+
+	.about-wrapper {
+		margin-top: 5rem;
 	}
 }
 

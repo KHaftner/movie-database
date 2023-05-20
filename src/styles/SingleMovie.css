@@ -106,7 +106,7 @@
 .favourite-single-movie {
 	display: flex;
 	background-color: var(--plum-lighter2);
-	max-width: 22rem;
+	max-width: 20rem;
 	border-radius: 1rem;
 	padding: 0.25rem 0.5rem 0;
 	box-shadow: 0.15rem 0.15rem 0.15rem 0rem #00000076;
@@ -124,6 +124,13 @@
 		margin-right: 1.5rem;
 		padding: 4rem;
 		max-width: 30rem;
+	}
+}
+
+@media (min-width: 32.875em) {
+
+	.favourite-single-movie p { 
+		margin-top: 2rem;
 	}
 }
 
@@ -165,4 +172,12 @@
 	.single-movie-title-box {
 		max-width: 100%;
 	}
+}
+
+@media (min-width: 96.875em) {
+
+	.favourite-single-movie {
+		max-width: 22rem;
+	}
+
 }

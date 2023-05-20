@@ -1,7 +1,6 @@
 import "../styles/Header.css";
 import logo from "../movie-love.png";
 import NavMain from "./NavMain";
-import { NavLink } from "react-router-dom";
 
 function Header() {
 	return (
@@ -15,7 +14,7 @@ function Header() {
 					/>
 					<h1>Movie Love</h1>
 				</a>
-			</div>
+			</div> 
 			<NavMain />
 		</header>
 	);
