@@ -181,3 +181,9 @@
 	}
 
 }
+
+@media (max-width: 40.625em) {
+	.single-movie-page {
+		margin-top: 5rem;
+	}
+}
