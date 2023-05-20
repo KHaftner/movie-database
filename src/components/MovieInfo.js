@@ -68,6 +68,8 @@ const MovieInfo = (props) => {
 									<em>{movie.release_date}</em>
 								</p>
 								<p>
+									<strong>Average Rating:</strong>
+									<br />
 									<span
 										className="rating-movie"
 										style={{
