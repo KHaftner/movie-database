@@ -5,13 +5,9 @@ import "../styles/About.css";
 const AboutLayout = ({ children }) => {
 	return (
 		<header className="page-header" id="about-header">
-			<div className="about-container">
+			<div className="about-h2-container">
 				<h2 id="about-h2">About Our Project</h2>
 			</div>
-			<img
-				src={bannerImage5}
-				alt="Popcorn spilled from its container in the shape of a heart"
-			/>
 			{children}
 		</header>
 	);
