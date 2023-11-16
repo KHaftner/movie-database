@@ -1,28 +1,30 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { appTitle } from "../globals/globalVariables";
+import { API_KEY } from "../globals/globalVariables";
 import MovieList from "../components/MovieList";
 import "../styles/MovieList.css";
 import HomeLayout from "../components/HomeLayout";
 import NavSort from "../components/NavSort";
 
 const PageMovies = () => {
-	const { filter = "popular", page } = useParams();
+	const { filter = "popular" } = useParams();
 	document.title = `${appTitle}`;
 
 	const [movies, setMovies] = useState([]);
 	const [category, setCategory] = useState(filter);
 
 	const getMovies = async () => {
-		const filterChoice = `https://api.themoviedb.org/3/movie/${category}?api_key=cc622192f2417beca927f1e14b1278dd&language=en-US&page=${page}`;
+		const filterChoice = `https://api.themoviedb.org/3/movie/${category}?api_key=${API_KEY}&language=en-US`;
 		const response = await fetch(filterChoice);
 		const responseJSON = await response.json();
+		console.log(responseJSON);
 		setMovies(responseJSON.results);
 	};
 
 	useEffect(() => {
 		getMovies();
-	}, [category, page]);
+	}, [category]);
 
 	const handleCategoryChange = (newCategory) => {
 		setCategory(newCategory);
