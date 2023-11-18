@@ -3,14 +3,17 @@
 	background: url('../images/about-background.jpg') no-repeat;
 	background-size: cover;
 	padding-bottom: 2rem;
+	min-height: min(90vh, 100rem);
+	position: relative;
+	top: 10rem;
+	margin-bottom: 1rem;
 }
 
-.about h2 {
-	margin-top: 6rem;
-	padding-top: 2rem;
-	font-size: clamp(1.5rem, 2vw, 2.5rem);
+.about-wrapper .about-h2-container h2 {
+	margin-top: 3rem;
+	padding-top: 2.25rem;
+	font-size: clamp(1.5rem, 2.75vw, 2.75rem);
 	text-align: center;
-
 }
 
 .about-h2-container {
@@ -26,6 +29,17 @@
 	max-width: 40rem;
 }
 
+.about-content {
+	padding: 1rem;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: flex-end;
+	min-height: 70vh;
+	max-width: 80rem;
+	margin: 0 auto;
+}
+
 .about p {
 	font-weight: 500;
 	margin: 2rem auto;
@@ -39,39 +53,23 @@
 }
 
 .about .cartoon-heart {
-	position: absolute;
-	top: 20rem;
-	left: 10rem;
-	z-index: 10;
-	display: none;
+	display: block;
+	position: relative;
+	margin: 1rem auto;
+	padding-bottom: 1rem;
 }
 
 @media (min-width: 40.625em) {
 	.about-wrapper {
 		padding-top: 2rem;
+		top: 6rem;
+	}
+
+	.about-wrapper .about-h2-container h2 {
+		margin-top: 0;
 	}
 
 	.about-text-container {
 		margin: 2rem auto;
 	}
 }
-
-@media (min-width: 100em) {
-	.about-wrapper {
-		padding-bottom: 6rem;
-	}
-
-	.about .cartoon-heart {
-		display: block;
-		z-index: 1
-	}
-}
-
-@media (max-width: 40.625em) {
-
-	.about-wrapper {
-		margin-top: 5rem;
-	}
-}
-
-

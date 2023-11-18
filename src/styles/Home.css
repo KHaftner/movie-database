@@ -1,3 +1,7 @@
+.App {
+	background-color: var(--mauve-lighter3);
+}
+
 #main-content {
 	margin: 0 auto;
 	max-width: 123.75rem;

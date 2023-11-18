@@ -14,7 +14,7 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	opacity: 0.33;
-	z-index: -1;
+	z-index: 0;
 }
 
 .movie-flex-container {

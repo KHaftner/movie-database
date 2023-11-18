@@ -1,3 +1,7 @@
+.favourites-wrapper {
+	min-height: 68rem;
+}
+
 #favourites-header img {
 	position: relative;
 	top: 4rem;
@@ -25,9 +29,13 @@
 	margin-top: 1rem;
 }
 
-.favourites-movie-container {
-	background-color: var(--plum-lighter3);
-	margin-top: 2rem;
+.favourite-movie-container .all-movies {
+	background-color: var(--mauve-lighter3);
+}
+
+.favourite-movie-container2 {
+	text-align: center;
+	padding: .5rem;
 }
 
 .favourites-middle {
