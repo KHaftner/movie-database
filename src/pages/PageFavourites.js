@@ -16,30 +16,37 @@ const PageFavourites = () => {
 	if (favList && favList.length > 0) {
 		return (
 			<section className="movies-page">
-				<FavouritesLayout />
-				<div className="favourites-middle">
-					<p>
-						This page is where all your <strong>favourite</strong>{" "}
-						movies are stored! &hearts;
-					</p>
-					<p>Let's make some popcorn and watch an old fave!</p>
-				</div>
-				<div className="favourite-movie-container">
-					<MovieList movies={favList} />
+				<div className="favourites-wrapper">
+					<FavouritesLayout />
+					<div className="favourites-middle">
+						<p>
+							This page is where all your <strong>favourite</strong>{" "}
+							movies are stored! &hearts;
+						</p>
+						<p>Let's make some popcorn and watch an old fave!</p>
+					</div>
+					<div className="favourite-movie-container">
+						<MovieList movies={favList} />
+					</div>
 				</div>
 			</section>
 		);
 	} else {
 		return (
 			<section className="movies-page">
-				<FavouritesLayout />
-				<div className="favourites-middle">
-					<p>
-						This page is where all your <strong>favourite</strong>{" "}
-						movies will be stored! &hearts;
-					</p>
-					<p>But... oh nooo, no favourites yet!</p>
-					<p>To add a movie to this page, just click its heart icon.</p>
+				<div className="favourites-wrapper">
+					<FavouritesLayout />
+					<div className="favourites-middle">
+						<p>
+							This page is where all your <strong>favourite</strong>{" "}
+							movies will be stored! &hearts;
+						</p>
+						<p>Let's make some popcorn and watch an old fave!</p>
+					</div>
+					<div className="favourite-movie-container2">
+						<p>But... oh nooo, no favourites yet!</p>
+						<p>To add a movie to this page, just click its heart icon.</p>
+					</div>
 				</div>
 			</section>
 		);

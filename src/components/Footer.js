@@ -1,6 +1,7 @@
 import "../styles/Footer.css";
 
 function Footer() {
+	const currentYear = new Date().getFullYear();
 	return (
 		<footer>
 			<p>
@@ -9,7 +10,7 @@ function Footer() {
 			<p>
 				By Kassandra Haftner & Amy Turton
 				<br />
-				&copy; 2023 FWD 33
+				&copy; {currentYear} FWD 33
 			</p>
 		</footer>
 	);
