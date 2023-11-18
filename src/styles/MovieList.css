@@ -13,7 +13,8 @@
 	text-align: center;
 	border-radius: 0.75rem;
 	box-shadow: 0.2rem 0.2rem 0.3rem 0rem #00000067;
-	margin-bottom: 1rem;
+	max-width: 20rem;
+	margin: 0 auto 1rem;
 }
 
 .movie-info {
@@ -93,7 +94,14 @@
 	color: var(--white);
 }
 
-@media (min-width: 50em) {
+.movie-title-box {
+	position: relative;
+	opacity: 1;
+	z-index: 2;
+	margin-top: 2rem;
+}
+
+@media (min-width: 40em) {
 	.all-movies {
 		display: flex;
 		flex-wrap: wrap;
@@ -170,5 +178,9 @@
 		line-height: 1rem;
 		transform: translate(-25%, -50%);
 		text-align: left;
+	}
+
+	.movie-title-box {
+		margin-top: 0;
 	}
 }
